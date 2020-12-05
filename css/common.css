@@ -1,0 +1,112 @@
+::selection {background:#c66;} ::-moz-selection {background:#c66;}
+
+body {
+    margin: 10px 10%;
+    padding: 0px; /* sort of initialization */
+    background-color: #F9F4ED;
+    color: #444;
+    font-family: bitter, Georgia, serif;
+    line-height: 1.5;
+}
+
+.it {
+    font-style: italic;
+}
+
+.visually-hidden{
+    visibility: hidden;
+}
+
+a:link {
+    color: #c66;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d98c8c;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+ul.menu {
+    list-style-type: none; /* no pointer in the list */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c66;
+    border-radius: 0.25em;
+}
+
+ul.menu li {
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Nerko One', cursive;
+}
+
+ul.menu li a:hover {
+    background-color: #d98c8c;
+}
+
+.active {
+    background-color: #ac3939;
+}
+
+/* HR LINE */
+hr.redline {
+    border: 0;
+    height: 0.75em;
+    background: #c66;
+    display: block;
+    padding: 0;
+    border-radius:0.25em;
+}
+
+/* H1 H2 */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap');
+h1, h2 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin:0;
+}
+
+h1 { 
+    font-size: 60px;
+    font-weight: bold; 
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-top: 1em;
+}
+
+/* FOOTER */
+ #footer {
+    display: block;
+    height: 20px;
+    background-color: #c66;
+    text-align: right;
+    color: #F9F4ED;
+    font-size: 75%;
+    padding-top: 0.4em;
+    padding-right: 1em;
+    border-radius: 0.75em;
+    margin-top: 10px;
+    clear: both; /* no floating left or right */
+}
+
+ 

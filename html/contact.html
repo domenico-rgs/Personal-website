@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact page">
+        <meta name="keywords" content="engineering, student, profile, contacts, email, telephone, form, telegram">
+        <meta name="author" content="Domenico Ragusa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Domenico Ragusa - Engineering student</title>
+        <link rel="icon" href="../media/icon.png">
+        <link type="text/css" rel="stylesheet" href="../css/common.css" />
+        <link type="text/css" rel="stylesheet" href="../css/contact.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./curriculum.html">Curriculum</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li style="float:right"><a class="active" href="#">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <section id="contact">
+			<h1>Tell me everything!</h1>
+			<h3>Do you need help with any projects? Do you have something interesting to show me? For anything you can contact me!</h3>
+            <hr class="redline">
+            <h3 class="redBold">Contacts</h3>
+            <ul class="contacts">
+                <li><span class="ico-email"></span><strong>Email</strong> <a href= "mailto:domenico.ragusa01@universitadipavia.it">domenico.ragusa01@universitadipavia.it</a></li>
+                <li><span class="ico-tel"></span><strong>Telephone</strong> +393275865029</li>
+                <li><span class="ico-telegram"></span><strong>Telegram</strong> <a href="https://t.me/domenico_rgs">@domenico_rgs</a></li>
+            </ul>
+            <hr class="redline">
+        </section>
+
+            <section id="container">
+                <h3 class="redBold">Form</h3>
+		      	<form name="contact_form" action="../php/sendmail.php" method="post">
+				    <label for="name">Name</label>
+				    <input type="text" id="name" name="name" maxlength="25" placeholder="Your name..." />
+				    <label for="surname">Surname</label>
+				    <input type="text" id="surname" name="surname" maxlength="25" placeholder="Your surname..." />
+				    <label for="email">Email</label>
+				    <input type="text" id="email" name="email" maxlength="70" placeholder="Your email..." />
+				    <label for="message">Message</label>
+				    <textarea id="message" name="message" cols="50" rows="10" placeholder="Your message here"></textarea>
+				    <input type="submit" value="Send" />
+			     </form>
+		  </section>
+        
+         <footer id="footer">
+                &copy; <span class="it">Domenico Ragusa 2020</span>
+        </footer>
+    </body>
+</html>
