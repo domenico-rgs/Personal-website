@@ -62,8 +62,17 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 1s ease;
 }
 
 input[type=submit]:hover {
       background-color: #ac3939
+}
+
+@media (max-width:767px){
+    #menu, #contact, #container, #footer {width:100%;}
+    #container, #contact {margin-left: 0;}
+    h1 {font-size: 40px;}
+    h2 {font-size: 30px;}
+    h4 {font-size:30px; margin: auto;}
 }

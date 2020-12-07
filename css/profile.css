@@ -17,6 +17,24 @@ img.ph_profile {
     margin-left: 2%;
 }
 
+/*
+figcaption {
+    opacity:0;
+    position: absolute;
+    left: 15%;
+    width: 20%;
+    background: rgba(0,0,0,0.85);
+    color:#eee;
+    border-radius:.25em;
+    padding: .5em 1em;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+#photo_profile:hover figcaption {
+    opacity:1;
+}*/
+
 /* INTEREST SECTION */
 .half1 {
     display:block;
@@ -78,4 +96,25 @@ h4.social { float: left;}
 
 p {
     font-size: 1em;
+}
+
+@media (max-width:767px){
+    #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
+    img.ph_profile { width: 100%; height: auto; border: 0.3em solid #444; float: none;}
+    #photo_profile, #main_profile {margin-left: 0px;}
+    h1 {font-size: 40px;}
+    h2 {font-size: 30px;}
+    h4 {font-size:30px; margin: auto;}
+    .half1, .half2 {float:none; border-right: 0px; margin: auto 0px; width: 100%;}
+    h4.social {float:none;}
+    ul.social li {float: left;}
+    ul.social {margin: 0 auto;}
+    #main_profile{margin-left: 0px;}
+}
+
+@media (min-width: 768px) and (max-width: 1300px){
+    #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
+    img.ph_profile { width: 100%; height: auto; border: 0.6em solid #444; float: none;}
+    #photo_profile, #main_profile {margin-left: 0px;}
+    .half1{margin-right: 10px;}
 }

@@ -9,3 +9,10 @@ h1 {
 #projects {
     margin: 5% 10%;
 }
+
+@media (max-width:767px){
+    h1 {font-size: 40px !important;}
+    #menu, #projects {width: 100%;}
+    body {margin: 10px 35px; width: 80%;}
+    #projects {margin: 5% 0%;}
+}

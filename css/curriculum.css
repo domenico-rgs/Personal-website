@@ -98,9 +98,29 @@ input[type=button] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 10% 35% 1% 38%;
+    margin: 10% auto 1% auto;
+    transition: background 1s ease;
 }
 
 input[type=button]:hover {
       background-color: #ac3939
+}
+
+@media (max-width:767px){
+    #menu, #experiences, #abilities {width: 100%;}
+    body {margin: 10px auto; width: 80%;}
+    h1 {font-size: 190%;}
+    .location {float:none; width: 100%; border-right: none; height:auto;}
+    .description p {margin-top: 5%;}
+    .description {margin-top: 10%;}
+    ul.abil {padding: 0;}
+    input[type=button]{ margin: 10% auto;}
+    ul.abil li {margin-bottom: 7%;}
+    .ability-score{margin: auto 35px;}
+    .element {margin: 20% 0;}
+    #curriculum{margin: 5% auto}
+}
+
+@media (min-width: 768px){
+    .description { margin-left: 200px;}
 }
