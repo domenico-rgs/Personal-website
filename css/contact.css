@@ -26,18 +26,14 @@ ul.contacts {
     padding-left: 0px;
 }
 
-
-.ico-email, .ico-tel, .ico-telegram {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    background-repeat: no-repeat;
-    margin-right: 15px;
+ul.contacts li {
+    margin-top: 2%;
 }
 
-.ico-email {background-image: url("../media/icon/ico-email.png"); }
-.ico-tel {background-image: url("../media/icon/ico-phone.png"); }
-.ico-telegram {background-image: url("../media/icon/ico-telegram.png"); }
+.icon-mail, .icon-phone, .icon-send {
+    font-size: 32px;
+    margin-right: 15px;
+}
 
 #container, #contact {
     margin: 30px 5%;

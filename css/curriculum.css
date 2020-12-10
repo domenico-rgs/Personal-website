@@ -80,15 +80,9 @@ ul.abil li:hover {
     float: right;
 }
 
-.ico-star-filled, .ico-star-unfilled, .ico-location{
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    background-repeat: no-repeat;
+.icon-star-o:before, .icon-star:before {
+    color: #ac3939;
 }
-
-.ico-star-filled {background-image: url("../media/icon/ico-star-filled.png"); }
-.ico-star-unfilled {background-image: url("../media/icon/ico-star-unfilled.png"); }
 
 /* PROJECTS BUTTON */
 input[type=button] {
