@@ -64,7 +64,7 @@ ul.social li {
     margin: 3px;
 }
 
-ul.social li a, i{
+ul.social li a, #about i{
     font-size: 32px;
     color: #444;
 }

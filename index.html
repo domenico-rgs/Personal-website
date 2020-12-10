@@ -9,22 +9,27 @@
         <title>Domenico Ragusa - Engineering student</title>
         <link rel="icon" href="./media/icon.png">
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
     </head>
+    
     <body>
         <!-- Navbar -->
-        <nav id="menu">
-            <ul class="menu">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="./html/profile.html">Profile</a></li>
-                <li><a href="./html/curriculum.html">Curriculum</a></li>
-                <li><a href="./html/projects.html">Projects</a></li>
-                <li style="float:right"><a href="./html/contact.html">Contact me</a></li>
-            </ul>
+        <nav class="topnav" id="menu">
+            <a href="#" class="active">Home</a>
+            <a href="./html/profile.html">Profile</a>
+            <a href="./html/curriculum.html">Curriculum</a>
+            <a href="./html/projects.html">Projects</a>
+            <a href="./html/contact.html" class="contact">Contact me</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="icon-th-menu"></i>
+            </a>
         </nav>
         
         <footer id="footer">
                 &copy; <span class="it">Domenico Ragusa 2020</span>
         </footer>
         
+        <script src="./js/common.js"></script>
     </body>
 </html>
