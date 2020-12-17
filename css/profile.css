@@ -1,3 +1,10 @@
+:root {
+    --strongRed: #ac3939;
+    --standardRed: #c66;
+    --lightRed: #d98c8c;
+    --black: #444;
+}
+
 #main_profile{
     width: 45%;
     margin-left: 30px;
@@ -9,7 +16,7 @@ img.ph_profile {
     width: 50%;
     height: 50%;
     border-radius: 0.50em;
-	border: 0.75em solid #444;
+	border: 0.75em solid var(--black);
     display: block;
     float: left;
 }
@@ -39,7 +46,7 @@ figcaption {
 .half1 {
     display:block;
     float:left;
-    border-right: 1px solid #444;
+    border-right: 1px solid var(--black);
     width: 50%;
     margin: 30px 30px;
 }
@@ -66,11 +73,11 @@ ul.social li {
 
 ul.social li a, #about i{
     font-size: 32px;
-    color: #444;
+    color: var(--black);
 }
 
 ul.social li a:hover {
-    color: #c66;
+    color: var(--standardRed);
 }
 
 /* H1, H2, H3, H4 */
@@ -88,7 +95,7 @@ p {
 
 @media (max-width:767px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.3em solid #444; float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--black); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     h1 {font-size: 40px;}
     h2 {font-size: 30px;}
@@ -102,7 +109,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1300px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.6em solid #444; float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--black); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     .half1{margin-right: 10px;}
 }

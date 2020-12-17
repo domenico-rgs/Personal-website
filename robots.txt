@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /media/*.mp3$
+
+User-agent: Googlebot-Image
+Disallow: /media/profile.jpg
+
+Sitemap: http://localhost/sitemap.xml

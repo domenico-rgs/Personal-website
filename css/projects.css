@@ -1,7 +1,14 @@
+:root {
+    --strongRed: #ac3939;
+    --standardRed: #c66;
+    --lightRed: #d98c8c;
+    --black: #444;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: #ac3939;
+    color: var(--strongRed);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
