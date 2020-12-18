@@ -34,6 +34,7 @@ a:visited {
     text-decoration: none;
 }
 
+
 /* NAVBAR */
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 .topnav {
@@ -77,6 +78,7 @@ hr.redline {
     display: block;
     padding: 0;
     border-radius:0.25em;
+    animation: line 0.8s linear forwards;
 }
 
 /* H1 H2 */
@@ -117,6 +119,17 @@ h3 {
     border-radius: 0.75em;
     margin-top: 10px;
     clear: both; /* no floating left or right */
+}
+
+@keyframes line {
+  from {
+    left:50%;
+    width:0%;
+  }
+  to {
+    left:5%;
+    width:100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

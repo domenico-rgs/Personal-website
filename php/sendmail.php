@@ -35,4 +35,5 @@ $mail_headers .= "Content-type: text/html; charset=iso-8859-1";
 
 //mail($userEmail,'Richiesta di contatto effettuata con successo', $userMessage, $mail_headers);
 //mail($adminEmail,'Richiesta di contatto dal sito', $adminMessage, $mail_headers);
-echo "Messaggio inviato con successo";
+echo "<script type='text/javascript'>alert('Messaggio inviato con successo'); history.go(-1);</script>";
+

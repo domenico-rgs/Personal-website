@@ -7,18 +7,20 @@
         <meta name="author" content="Domenico Ragusa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Domenico Ragusa - Engineering student</title>
-        <link rel="icon" href="../media/icon.png">
-        <link type="text/css" rel="stylesheet" href="../css/common.css" />
-        <link type="text/css" rel="stylesheet" href="../css/contact.css" />
-        <link type="text/css" rel="stylesheet" href="../css/fonts.css" />
+        <link rel="icon" href="./media/icon.png">
+        <link type="text/css" rel="stylesheet" href="./css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./css/contact.css" />
+        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+        <script src="./js/common.js"></script>
+        <script src="./js/contact.js"></script>
     </head>
     <body>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="../index.html" >Home</a>
+            <a href="./index.html" >Home</a>
             <a href="./profile.html">Profile</a>
             <a href="./curriculum.html">Curriculum</a>
-            <a href="./projects.html">Projects</a>
+            <a href="./projects.php">Projects</a>
             <a href="#" class="active contact">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -41,23 +43,21 @@
 
             <section id="container">
                 <h3 class="redBold">Form</h3>
-		      	<form name="contact_form" action="../php/sendmail.php" method="post">
+		      	<form name="contact_form" action="./php/sendmail.php" method="post">
 				    <label for="name">Name</label>
-				    <input type="text" id="name" name="name" maxlength="25" placeholder="Your name..." />
+				    <input type="text" id="name" name="name" maxlength="25" placeholder="Your name..."/>
 				    <label for="surname">Surname</label>
 				    <input type="text" id="surname" name="surname" maxlength="25" placeholder="Your surname..." />
 				    <label for="email">Email</label>
 				    <input type="text" id="email" name="email" maxlength="70" placeholder="Your email..." />
 				    <label for="message">Message</label>
 				    <textarea id="message" name="message" cols="50" rows="10" placeholder="Your message here"></textarea>
-				    <input type="submit" value="Send" />
+				    <input type="button" value="Send" onclick="checkForm()"/>
 			     </form>
 		  </section>
         
          <footer id="footer">
                 &copy; <span class="it">Domenico Ragusa 2020</span>
         </footer>
-        
-        <script src="../js/common.js"></script>
     </body>
 </html>
