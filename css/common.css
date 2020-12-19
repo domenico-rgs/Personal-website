@@ -14,6 +14,7 @@ body {
     color: var(--black);
     font-family: bitter, Georgia, serif;
     line-height: 1.5;
+    word-wrap: break-word;
 }
 
 .it {
@@ -78,7 +79,6 @@ hr.redline {
     display: block;
     padding: 0;
     border-radius:0.25em;
-    animation: line 0.8s linear forwards;
 }
 
 /* H1 H2 */
@@ -121,15 +121,20 @@ h3 {
     clear: both; /* no floating left or right */
 }
 
-@keyframes line {
-  from {
-    left:50%;
-    width:0%;
-  }
-  to {
-    left:5%;
-    width:100%;
-  }
+/* BUTTON */
+input[type="button"] {
+    background-color: var(--standardRed);
+    color: white;
+    padding: 16px 55px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10% auto 1% auto;
+    transition: background 1s ease;
+}
+
+input[type="button"]:hover {
+      background-color: var(--strongRed)
 }
 
 @media screen and (max-width: 600px) {

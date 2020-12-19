@@ -10,7 +10,7 @@
         <link rel="icon" href="./media/icon.png">
         <link type="text/css" rel="stylesheet" href="./css/projects.css" />
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
-        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
     </head>
     <body>
         <!-- Navbar -->

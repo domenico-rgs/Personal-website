@@ -9,10 +9,16 @@
         <title>Domenico Ragusa - Engineering student</title>
         <link rel="icon" href="./media/icon.png">
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
-        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+        <link type="text/css" rel="stylesheet" href="./css/index.css" />
     </head>
     
     <body>
+                <!-- The video -->
+        <video autoplay muted loop id=backgroundVideo>
+            <source src="./media/background.mp4" type="video/mp4">
+        </video>
+        
         <!-- Navbar -->
         <nav class="topnav" id="menu">
             <a href="#" class="active">Home</a>
@@ -26,10 +32,18 @@
             </a>
         </nav>
         
-        <footer id="footer">
+        <input type="button" id="butVisible" onclick="enableMenu()" value="Visit the website" />
+        
+        <footer id="footer_home">
                 &copy; <span class="it">Domenico Ragusa 2020</span>
         </footer>
         
+        <script>
+            function enableMenu(){
+                document.getElementById("menu").style.opacity="1";
+                document.getElementById("butVisible").style.opacity="0";
+            }
+        </script>
         <script src="./js/common.js"></script>
     </body>
 </html>
