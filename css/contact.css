@@ -39,6 +39,10 @@ ul.contacts li {
     margin: 30px 5%;
 }
 
+.number {
+    color: #ffc815;
+}
+
 input[type=text], textarea {
     width: 100%;
     padding: 12px;
@@ -49,6 +53,15 @@ input[type=text], textarea {
     margin-bottom: 16px;
     resize: vertical; /* allow user to resize textarea non horizontally */
     font-family: Arial, sans-serif;
+}
+
+input[type=button]{
+    margin: 3% auto;
+}
+
+input[type=text]:focus, textarea:focus {
+        border: 1px solid #ffc815;
+
 }
 
 @media (max-width:767px){

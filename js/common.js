@@ -6,3 +6,11 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function openForm() {
+  document.getElementById("accessForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("accessForm").style.display = "none";
+}

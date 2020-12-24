@@ -30,16 +30,19 @@ function validateEmail(email) {
 function checkForm() {
     var message = "";
     if (!exists(document.contact_form.name.value) || noIntegerNumber(document.contact_form.name.value)) 
-        message += "Name entered is not valid\n";
+        message += "Name entered is not valid<br>";
     if (!exists(document.contact_form.surname.value) || noIntegerNumber(document.contact_form.surname.value)) 
-        message += "Surname entered is not valid\n";
+        message += "Surname entered is not valid<br>";
     if(!validateEmail(document.contact_form.email.value))
-        message += "Email entered is not valid\n";
+        message += "Email entered is not valid<br>";
     if (!exists(document.contact_form.message.value) ) 
         message += "Please add your message to me";
    			
     if ( message != "" ) 
-        alert(message);
+       Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            html: message })
     else
         document.contact_form.submit();
     }

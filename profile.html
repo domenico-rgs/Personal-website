@@ -80,8 +80,20 @@
                 </ul>
             </div>
         </section>
+        
+         <!-- Restricted Area -->
+        <div class="access-popup" id="accessForm">
+            <form action="./restricted.php" method="POST" class="form-container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
         <footer id="footer">
-                &copy; <span class="it">Domenico Ragusa 2020</span>
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2020</span>
         </footer>
         
         <script src="./js/profile.js"></script>

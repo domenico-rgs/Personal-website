@@ -9,7 +9,7 @@ img.ph_profile {
     width: 50%;
     height: 50%;
     border-radius: 0.50em;
-	border: 0.75em solid var(--black);
+	border: 0.75em solid #434343;
     display: block;
     float: left;
 }
@@ -51,17 +51,22 @@ i {
     margin-right: 10px;
 }
 
+#about i{
+    font-size:32px;
+    color: #ffc815;
+}
+
 /* SOCIAL */
 ul.social {
     list-style-type: none;
 }
 
-ul.social li {
+ul.social li a {
     float: right;
     margin: 3px;
 }
 
-ul.social li a, #about i{
+ul.social li a{
     font-size: 32px;
     color: var(--black);
 }
@@ -79,6 +84,7 @@ h4 {
 
 #social-intro { 
     float: left;
+    color: #ffc815;
     transition: opacity 0.25s ease-in-out;
 }
 
@@ -92,11 +98,11 @@ p {
     #photo_profile, #main_profile {margin-left: 0px;}
     h1 {font-size: 40px;}
     h2 {font-size: 30px;}
-    h4 {font-size:30px; margin: auto;}
+    h4 {font-size:30px; margin: auto 10px;}
     .half1, .half2 {float:none; border-right: 0px; margin: auto 0px; width: 100%;}
     h4.social {float:none;}
     ul.social li {float: left;}
-    ul.social {margin: 0 auto;}
+    ul.social {float: left; margin: 0 22%; padding: 0;}
     #main_profile{margin-left: 0px;}
 }
 
