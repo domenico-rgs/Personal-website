@@ -4,19 +4,6 @@
     display: inline-block;
 }
 
-/* PHOTO */
-img.ph_profile {
-    width: 50%;
-    height: 50%;
-    border-radius: 0.50em;
-	border: 0.75em solid #434343;
-    display: block;
-    float: left;
-}
-#photo_profile {
-    margin-left: 2%;
-}
-
 .nameLine{
     animation: line 0.8s linear forwards;
 }
@@ -32,11 +19,24 @@ img.ph_profile {
   }
 }
 
+/* PHOTO */
+img.ph_profile {
+    width: 50%;
+    height: 50%;
+    border-radius: 0.50em;
+	border: 0.75em solid #434343;
+    display: block;
+    float: left;
+}
+#photo_profile {
+    margin-left: 2%;
+}
+
 /* INTEREST SECTION */
 .half1 {
     display:block;
     float:left;
-    border-right: 1px solid var(--black);
+    border-right: 1px solid var(--white);
     width: 50%;
     margin: 30px 30px;
 }
@@ -47,13 +47,10 @@ img.ph_profile {
     margin: 30px 30px;
 }
 
-i {
-    margin-right: 10px;
-}
-
 #about i{
+    margin-right: 10px;
     font-size:32px;
-    color: #ffc815;
+    color: var(--standardYellow);
 }
 
 /* SOCIAL */
@@ -68,24 +65,24 @@ ul.social li a {
 
 ul.social li a{
     font-size: 32px;
-    color: var(--black);
+    color: var(--white);
 }
 
 ul.social li a:hover {
-    color: var(--standardRed);
-}
-
-/* H1, H2, H3, H4 */
-h4 {
-    margin:0px; padding:0px;
-    font-weight: bold;
-    font-size: 1.25em;
+    color: var(--standardYellow);
 }
 
 #social-intro { 
     float: left;
-    color: #ffc815;
+    color: var(--standardYellow);
     transition: opacity 0.25s ease-in-out;
+}
+
+/* TEXT */
+h4 {
+    margin:0px; padding:0px;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 p {
@@ -94,7 +91,7 @@ p {
 
 @media (max-width:767px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--black); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--white); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     h1 {font-size: 40px;}
     h2 {font-size: 30px;}
@@ -108,7 +105,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1300px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--black); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--white); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     .half1{margin-right: 10px;}
 }

@@ -1,3 +1,4 @@
+/* Check if there is something inside the input field */
 function exists(input){
     var flag = false;
     if(input){
@@ -11,6 +12,7 @@ function exists(input){
     return flag;
 }
 
+/* Check if there aren't number inside the input */
 function noIntegerNumber(input){
     var noNumber = true;
     for(var i = 0; i<input.length; i++){
@@ -22,11 +24,13 @@ function noIntegerNumber(input){
     return noNumber;
 }
 
+/* Check if the email is semantically correct */
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
+/* Check all the fields in the form contact */
 function checkForm() {
     var message = "";
     if (!exists(document.contact_form.name.value) || noIntegerNumber(document.contact_form.name.value)) 

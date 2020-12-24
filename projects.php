@@ -11,7 +11,6 @@
         <link type="text/css" rel="stylesheet" href="./css/projects.css" />
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     </head>
     <body>
         <!-- Navbar -->
@@ -22,16 +21,18 @@
             <a href="#" class="active">Projects</a>
             <a href="./contact.html" class="contact">Contact me</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="icon-th-menu"></i>
             </a>
         </nav>
         
+        <!-- Projects -->
         <section id="projects">
             <h1>Projects</h1>
             <h3>Here are the projects carried out, both university and those made in free time. In group and alone.</h3>
             <hr>
             <?php
+                //Get projects info from DB
                 $con = mysqli_connect("localhost","root","Gh67hj46gd");
                 if(!$con){
                     echo '<script>Swal.fire({
@@ -44,7 +45,7 @@
                     exit();
                 }
         
-                mysqli_select_db($con,"myprojects");
+                mysqli_select_db($con,"website");
         
                 $result = mysqli_query($con,"SELECT * FROM projects");
             
@@ -71,11 +72,13 @@
             </form>
         </div>
         
+        <!-- Footer -->
         <footer id="footer">
-            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2020</span>
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
-        
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

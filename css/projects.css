@@ -1,7 +1,8 @@
+/* TAG TITLE */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
@@ -10,7 +11,7 @@ h3.projectTitle {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     text-align: center;
-    color: #ffc815;
+    color: var(--standardYellow);
 }
 
 #projects {
@@ -18,11 +19,12 @@ h3.projectTitle {
     overflow:auto;
 }
 
+/* PROJECTS TILES */ 
 .project {
     float:left;
     width: 280px;
     height: 280px;
-    border: solid 1px #ffc815;
+    border: solid 1px var(--standardYellow);
     background-color: #363636;
     transition: background 1s ease;
 }

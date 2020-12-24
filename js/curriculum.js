@@ -1,3 +1,4 @@
+/* Draw the stars in the page given the ability and a number of stars */
 function paintStars(name, num){
     $( name ).after( "<span class=\"ability-score\"></span>" );
     for(var i = 0; i<num; i++){

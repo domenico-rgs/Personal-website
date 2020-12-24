@@ -22,20 +22,22 @@
             <a href="./projects.php">Projects</a>
             <a href="./contact.html" class="contact">Contact me</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="icon-th-menu"></i>
             </a>
         </nav>
 
+        <!-- Photo -->
         <figure id="photo_profile" onclick="playAudio()">
             <img class="ph_profile" src="./media/profile.jpg" alt="Domenico Ragusa" />
             <audio id="audio" src="./media/easteregg.mp3"></audio>
         </figure>
 
+        <!-- Intro -->
         <article id="main_profile">
             <h1>Domenico Ragusa</h1>
             <h2>Engineering student</h2>
-            <hr class="redline nameLine">
+            <hr class="yellowLine nameLine">
 
             <h3>Hello!</h3>
             <p>I'm Domenico, an engineering student from Sicily. I study at <a href="http://www.unipv.eu" target="_blank">University of Pavia</a> and I always look for new experiences</p>
@@ -49,7 +51,10 @@
                 <li><a class="icon-facebook-with-circle" href="https://www.facebook.com/domenico.rgs/" target="_blank" title="Facebook" onmouseover="showMore('Facebook')" onmouseout="showMore('Look me upon...')"></a></li>
             </ul>
         </article>
-        <hr class="redline">
+        
+        <hr class="yellowLine">
+        
+        <!-- Extra info -->
         <section id="about">
             <div class="half1">
                 <h4><i class="icon-star-o"></i>Life so far...</h4>
@@ -92,10 +97,12 @@
             </form>
         </div>
         
+        <!-- Footer -->
         <footer id="footer">
-            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2020</span>
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
+        <!-- JavaScript -->
         <script src="./js/profile.js"></script>
         <script src="./js/common.js"></script>
     </body>

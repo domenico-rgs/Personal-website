@@ -1,14 +1,11 @@
+/* TAG TITLE */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     margin-top: 5%;
-}
-
-#contact {
-     margin: 5% 10%;
 }
 
 h3 {
@@ -16,11 +13,16 @@ h3 {
     font-weight: normal;
 }
 
-h3.redBold {
+h3.yellowBold {
     font-weight: bold;
-    color: var(--strongRed);
+    color: var(--strongYellow);
 }
 
+#contact {
+     margin: 5% 10%;
+}
+
+/* CONTACTS LIST */
 ul.contacts {
     list-style-type: none;
     padding-left: 0px;
@@ -43,7 +45,8 @@ ul.contacts li {
     color: #ffc815;
 }
 
-input[type=text], textarea {
+/* FORM */
+input[type=text],input[type=email], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -59,7 +62,7 @@ input[type=button]{
     margin: 3% auto;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
         border: 1px solid #ffc815;
 
 }

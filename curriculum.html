@@ -11,9 +11,6 @@
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
         <link type="text/css" rel="stylesheet" href="./css/curriculum.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
-        <script src="./js/common.js"></script>
-        <script src="./js/curriculum.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <!-- Navbar -->
@@ -24,12 +21,13 @@
             <a href="./projects.php">Projects</a>
             <a href="./contact.html" class="contact">Contact me</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="icon-th-menu"></i>
             </a>
         </nav>
         
         <div id="curriculum">
+            <!--Experiences -->
             <section id="experiences"> 
                 <h1>Experiences</h1>
                 <p class="quote">"The essence of the spirit of man lies in new experiences." - Christopher McCandless</p>
@@ -84,6 +82,7 @@
                 </div>
             </section>
             
+            <!-- Abilities -->
             <section id="abilities">
                 <h1>Abilities</h1>
                 <p class="quote">"Life without knowledge is death in disguise." - Talib Kweli</p>
@@ -156,11 +155,16 @@
             </form>
         </div>
     
+        <!-- Footer -->
         <footer id="footer">
-            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2020</span>
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
-         <script>
+        <!--JavaScript -->
+        <script src="./js/common.js"></script>
+        <script src="./js/curriculum.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
             paintStars(java,4);
             paintStars(c,4);
             paintStars(joomla,5);

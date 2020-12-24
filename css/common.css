@@ -1,17 +1,19 @@
 :root {
-    --strongRed: #fbc000;
-    --standardRed: #ffc815;
-    --lightRed: #ffd343;
-    --black: #fff;
+    --strongYellow: #fbc000;
+    --standardYellow: #ffc815;
+    --lightYellow: #ffd343;
+    --white: #fff;
 }
 
-::selection {background:var(--standardRed);} ::-moz-selection {background:var(--standardRed);}
+/* Highligh selected text with yellow */
+::selection {background:var(--standardYellow);} ::-moz-selection {background:var(--standardYellow);}
 
+/* GENERAL */
 body {
     margin: 10px 10%;
     padding: 0px; /* sort of initialization */
     background-color: #1d1d1d;
-    color: var(--black);
+    color: var(--white);
     font-family: bitter, Georgia, serif;
     line-height: 1.5;
     word-wrap: break-word;
@@ -25,22 +27,25 @@ body {
     visibility: hidden;
 }
 
+/* LINK */
 a:link {
-    color: var(--standardRed);
+    color: var(--standardYellow);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--lightRed);
+    color: var(--lightYellow);
     text-decoration: none;
 }
 
-a.restricted{ color:#F9F4ED;}
+a.restricted{ 
+    color:#F9F4ED;
+}
 
 /* NAVBAR */
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 .topnav {
-    background-color: var(--standardRed);
+    background-color: var(--standardYellow);
     overflow: hidden;
     border-radius: 0.25em;
 }
@@ -57,11 +62,11 @@ a.restricted{ color:#F9F4ED;}
 }
 
 .topnav a:hover {
-    background-color: var(--lightRed);
+    background-color: var(--lightYellow);
 }
 
 .topnav a.active {
-    background-color: var(--strongRed);
+    background-color: var(--strongYellow);
 }
 
 .topnav .icon {
@@ -73,16 +78,16 @@ a.restricted{ color:#F9F4ED;}
 }
 
 /* HR LINE */
-hr.redline {
+hr.yellowLine {
     border: 0;
     height: 0.75em;
-    background: var(--standardRed);
+    background: var(--standardYellow);
     display: block;
     padding: 0;
     border-radius:0.25em;
 }
 
-/* H1 H2 */
+/* STANDARD H1 H2 H3 */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap');
 h1, h2 {
     font-family: 'Rubik', sans-serif;
@@ -111,7 +116,7 @@ h3 {
  #footer {
     display: block;
     height: 20px;
-    background-color: var(--standardRed);
+    background-color: var(--standardYellow);
     text-align: right;
     color: #F9F4ED;
     font-size: 75%;
@@ -124,7 +129,7 @@ h3 {
 
 /* BUTTON */
 input[type="button"] {
-    background-color: var(--standardRed);
+    background-color: var(--standardYellow);
     color: white;
     padding: 16px 55px;
     border: none;
@@ -137,13 +142,12 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-      background-color: var(--strongRed)
+      background-color: var(--strongYellow)
 }
 
 /*ACCESS FORM*/
-/* The popup form - hidden by default */
 .access-popup {
-    display: none;
+    display: none; /* popup hidden by default */
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -151,14 +155,12 @@ input[type="button"]:hover {
     z-index: 9;
 }
 
-/* Add styles to the form container */
 .form-container {
     max-width: 300px;
     padding: 10px;
     background-color: #1d1d1d;
 }
 
-/* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
     width: 100%;
     text-align:center;
@@ -174,7 +176,6 @@ input[type="button"]:hover {
     outline: none;
 }
 
-/* Set a style for the submit/login button */
 .form-container .btn {
     background-color: #ffc815;
     color: white;
@@ -186,12 +187,10 @@ input[type="button"]:hover {
     opacity: 1;
 }
 
-/* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
 }
 
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 0.8;
 }

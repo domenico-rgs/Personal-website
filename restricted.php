@@ -8,14 +8,12 @@
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
         <link type="text/css" rel="stylesheet" href="./css/restricted.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     </head>
     
     <body>
         <?php
             if (isset($_POST['psw'])) {
-                if ($_POST['psw'] == "domenico") {
+                if ($_POST['psw'] == "domenico") { //checking if password entered is correct
                     if (!session_id()) session_start();
                     $_SESSION['logon'] = true;
                 }
@@ -23,6 +21,7 @@
                 
             if (!session_id()) session_start();
             if (!isset($_SESSION['logon']) or !$_SESSION['logon']) {
+                    //if password is not correct go back to previous page
                     echo '<script>Swal.fire({
                             icon: \'error\',
                             text: \'Wrong password\',
@@ -47,7 +46,8 @@
             </a>
         </nav>
         
-        <h1>Message received</h1>
+        <!-- Message table -->
+        <h1>Messages received</h1>
         <br>
         <div style="overflow-x:auto;">
         <table>
@@ -73,11 +73,13 @@
         </table>
         </div>
         
-
+        <!-- Footer -->
         <footer id="footer">
-            &copy; <span class="it">Domenico Ragusa 2020</span>
+            &copy; <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
+        <!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

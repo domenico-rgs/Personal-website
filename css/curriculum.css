@@ -1,7 +1,8 @@
+/* TAG TITLE */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
@@ -9,12 +10,42 @@ h1 {
 h3 {
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    color: var(--strongRed);
+    color: var(--strongYellow);
+}
+
+/* EXTRA */
+.quote {
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 150%;
+}
+
+/* EXPERIENCES */
+#curriculum {
+    margin: 5% 10%;
+}
+
+.element {
+    margin: 8% 0;
+}
+
+.description {
+    display: block;
+}
+
+.location {
+    display:block;
+    float:left;
+    border-right: 1px solid var(--white);
+    width: 20%;
+    height: 100px;
+    margin-right: 5%;
+    padding-right: 5%;
 }
 
 .location .place {
     margin-top: 5px;
-    color: #ffc815;
+    color: var(--standardYellow);
 }
 
 .location .vote {
@@ -30,34 +61,6 @@ h3 {
 .location p{
     margin-top: 0px;
     margin-bottom: 0px;
-}
-
-#curriculum {
-    margin: 5% 10%;
-}
-
-.quote {
-    text-align: center;
-    font-family: 'Yellowtail', cursive;
-    font-size: 150%;
-}
-
-.element {
-    margin: 8% 0;
-}
-
-.location {
-    display:block;
-    float:left;
-    border-right: 1px solid var(--black);
-    width: 20%;
-    height: 100px;
-    margin-right: 5%;
-    padding-right: 5%;
-}
-
-.description {
-    display: block;
 }
 
 /* ABILITIES */
@@ -80,7 +83,7 @@ ul.abil li:hover {
 }
 
 .icon-star-o:before, .icon-star:before {
-    color: var(--strongRed);
+    color: var(--strongYellow);
 }
 
 @media (max-width:767px){

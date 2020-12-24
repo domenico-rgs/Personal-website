@@ -38,15 +38,6 @@
 .icon-phone:before {
   content: "\e90a";
 }
-.icon-location_on:before {
-  content: "\e90b";
-}
-.icon-place:before {
-  content: "\e90b";
-}
-.icon-room:before {
-  content: "\e90b";
-}
 .icon-star-o:before {
   content: "\e907";
 }

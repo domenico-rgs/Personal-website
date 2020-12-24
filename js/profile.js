@@ -1,4 +1,5 @@
- function playAudio() {
+/* Play/Pause and hidden audio onclick */
+function playAudio() {
     var myAudio = document.getElementById('audio');
         if (!myAudio.paused) {
             myAudio.pause();
@@ -7,6 +8,7 @@
         }
 }
 
+/* Change a string with the name of the social selected */
 function showMore(name){
     var mainContent = document.getElementById("social-intro");
     mainContent.style.opacity = 0;

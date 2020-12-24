@@ -7,7 +7,13 @@
     z-index:-1;
     transform: translateX(calc((100% - 100vw) / 2));
 }
-            
+
+.topnav {
+    opacity: 0;
+    transition: opacity 1s linear; 
+}
+
+/* FOOTER */
 #footer_home {
     position: absolute;
     height: 20px;
@@ -17,12 +23,8 @@
     color: #F9F4ED;
     font-size: 75%;
 }
-            
-.topnav {
-    opacity: 0;
-    transition: opacity 1s linear; 
-}
-            
+   
+/* BUTTON */
 #butVisible {
     position: absolute;
     bottom:5%;

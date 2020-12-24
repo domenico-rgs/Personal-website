@@ -1,4 +1,5 @@
-function myFunction() {
+/* When needed makes the menu hamburger */
+function hamburger() {
   var x = document.getElementById("menu");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -7,6 +8,7 @@ function myFunction() {
   }
 }
 
+/* Display or not restricted area block */
 function openForm() {
   document.getElementById("accessForm").style.display = "block";
 }

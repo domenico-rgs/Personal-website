@@ -1,11 +1,13 @@
+/* TITLES TAG  */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
+/* TABLE */
 table, th, td {
     border: 1px solid black;
 }
@@ -27,7 +29,7 @@ th, td {
 tr:hover {background-color: #696969;}
 
 th {
-  background-color: var(--standardRed);
+  background-color: var(--standardYellow);
   color: #F9F4ED;
 }
 
