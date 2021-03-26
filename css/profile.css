@@ -1,14 +1,22 @@
-:root {
-    --strongRed: #ac3939;
-    --standardRed: #c66;
-    --lightRed: #d98c8c;
-    --black: #444;
-}
-
 #main_profile{
     width: 45%;
     margin-left: 30px;
     display: inline-block;
+}
+
+.nameLine{
+    animation: line 0.8s linear forwards;
+}
+
+@keyframes line {
+  from {
+    left:50%;
+    width:0%;
+  }
+  to {
+    left:5%;
+    width:100%;
+  }
 }
 
 /* PHOTO */
@@ -16,7 +24,7 @@ img.ph_profile {
     width: 50%;
     height: 50%;
     border-radius: 0.50em;
-	border: 0.75em solid var(--black);
+	border: 0.75em solid #434343;
     display: block;
     float: left;
 }
@@ -24,29 +32,11 @@ img.ph_profile {
     margin-left: 2%;
 }
 
-/*
-figcaption {
-    opacity:0;
-    position: absolute;
-    left: 15%;
-    width: 20%;
-    background: rgba(0,0,0,0.85);
-    color:#eee;
-    border-radius:.25em;
-    padding: .5em 1em;
-    -webkit-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-}
-
-#photo_profile:hover figcaption {
-    opacity:1;
-}*/
-
 /* INTEREST SECTION */
 .half1 {
     display:block;
     float:left;
-    border-right: 1px solid var(--black);
+    border-right: 1px solid var(--white);
     width: 50%;
     margin: 30px 30px;
 }
@@ -57,8 +47,10 @@ figcaption {
     margin: 30px 30px;
 }
 
-i {
+#about i{
     margin-right: 10px;
+    font-size:32px;
+    color: var(--standardYellow);
 }
 
 /* SOCIAL */
@@ -66,28 +58,32 @@ ul.social {
     list-style-type: none;
 }
 
-ul.social li {
+ul.social li a {
     float: right;
     margin: 3px;
 }
 
-ul.social li a, #about i{
+ul.social li a{
     font-size: 32px;
-    color: var(--black);
+    color: var(--white);
 }
 
 ul.social li a:hover {
-    color: var(--standardRed);
+    color: var(--standardYellow);
 }
 
-/* H1, H2, H3, H4 */
+#social-intro { 
+    float: left;
+    color: var(--standardYellow);
+    transition: opacity 0.25s ease-in-out;
+}
+
+/* TEXT */
 h4 {
     margin:0px; padding:0px;
     font-weight: bold;
     font-size: 1.25em;
 }
-
-h4.social { float: left;}
 
 p {
     font-size: 1em;
@@ -95,21 +91,21 @@ p {
 
 @media (max-width:767px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--black); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--white); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     h1 {font-size: 40px;}
     h2 {font-size: 30px;}
-    h4 {font-size:30px; margin: auto;}
+    h4 {font-size:30px; margin: auto 10px;}
     .half1, .half2 {float:none; border-right: 0px; margin: auto 0px; width: 100%;}
     h4.social {float:none;}
     ul.social li {float: left;}
-    ul.social {margin: 0 auto;}
+    ul.social {float: left; margin: 0 22%; padding: 0;}
     #main_profile{margin-left: 0px;}
 }
 
 @media (min-width: 768px) and (max-width: 1300px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--black); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--white); float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     .half1{margin-right: 10px;}
 }

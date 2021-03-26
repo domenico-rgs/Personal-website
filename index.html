@@ -9,27 +9,54 @@
         <title>Domenico Ragusa - Engineering student</title>
         <link rel="icon" href="./media/icon.png">
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
-        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+        <link type="text/css" rel="stylesheet" href="./css/index.css" />
     </head>
     
     <body>
+        <!-- The video -->
+        <video autoplay muted loop id=backgroundVideo>
+            <source src="./media/background.mp4" type="video/mp4">
+        </video>
+        
         <!-- Navbar -->
         <nav class="topnav" id="menu">
             <a href="#" class="active">Home</a>
-            <a href="./html/profile.html">Profile</a>
-            <a href="./html/curriculum.html">Curriculum</a>
-            <a href="./html/projects.html">Projects</a>
-            <a href="./html/contact.html" class="contact">Contact me</a>
+            <a href="./profile.html">Profile</a>
+            <a href="./curriculum.html">Curriculum</a>
+            <a href="./projects.php">Projects</a>
+            <a href="./contact.html" class="contact">Contact me</a>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="icon-th-menu"></i>
             </a>
         </nav>
         
-        <footer id="footer">
-                &copy; <span class="it">Domenico Ragusa 2020</span>
+        <input type="button" id="butVisible" onclick="enableMenu()" value="Visit the website" />
+        
+        <!-- Restricted Area -->
+        <div class="access-popup" id="accessForm">
+            <form action="./restricted.php" method="POST" class="form-container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
+        <!-- Footer -->
+        <footer id="footer_home">
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
+        <!-- JavaScript -->
+        <script>
+            function enableMenu(){
+                document.getElementById("menu").style.opacity="1";
+                document.getElementById("butVisible").style.opacity="0";
+            }
+        </script>
         <script src="./js/common.js"></script>
     </body>
 </html>

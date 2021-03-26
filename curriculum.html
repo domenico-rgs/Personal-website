@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Domenico Ragusa's curriculum">
+        <meta name="keywords" content="engineering, student, profile, personal websitem curriculum, job, abilities, experiences, skills">
+        <meta name="author" content="Domenico Ragusa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Domenico Ragusa - Engineering student</title>
+        <link rel="icon" href="./media/icon.png">
+        <link type="text/css" rel="stylesheet" href="./css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./css/curriculum.css" />
+        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="topnav" id="menu">
+            <a href="./index.html" >Home</a>
+            <a href="./profile.html">Profile</a>
+            <a href="#" class="active">Curriculum</a>
+            <a href="./projects.php">Projects</a>
+            <a href="./contact.html" class="contact">Contact me</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="icon-th-menu"></i>
+            </a>
+        </nav>
+        
+        <div id="curriculum">
+            <!--Experiences -->
+            <section id="experiences"> 
+                <h1>Experiences</h1>
+                <p class="quote">"The essence of the spirit of man lies in new experiences." - Christopher McCandless</p>
+                <hr>
+                <h3>Educations</h3>
+                <div class="element">
+                    <div class="location">
+                        <h4>Universit&agrave; di Pavia</h4>
+                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p>2020 - 2022</p>
+                    </div>
+                    <div class="description">
+                        <strong>Master's degree - Computer Engineering (Data Science)</strong>
+                        <p>The master's degree course in Computer Engineering is aimed at training professionals with in-depth knowledge of the theoretical and practical aspects of engineering disciplines in the field of Information and Communication Technology.</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="location">
+                        <h4>Universit&agrave; di Pavia</h4>
+                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p>2017 - 2020</p>
+                    </div>
+                    <div class="description">
+                        <strong>Bachelor's degreee - Electronic-Computer Engineering</strong>
+                        <p>The education was mainly addressed on the basics of engineering with elements of electronics in the early years and then gradually specializing in the field of computer science with automatic controls, C / Java programming and data analysis.</p>
+                    </div>
+                </div>
+                <div class="element">
+                    <div class="location">
+                        <h4>I.I.S.S. F. Crispi</h4>
+                        <p class="place"><i class="icon-place"></i>Ribera (AG)</p>
+                        <p>2012 - 2017</p>
+                        <p class="vote">Vote: 100L</p>
+                    </div>
+                    <div class="description">
+                        <strong>Highschool - Scientific Lyceum</strong>
+                        <p>I mainly studied scientific subjects such as Mathematics, Physics, Natural Sciences with the aim of obtaining a solid basis for subsequent university studies.</p>
+                    </div>
+                </div>
+                <hr>
+                <h3>Careers</h3>
+                <div class="element">
+                    <div class="location">
+                        <h4>Comune di Pavia</h4>
+                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p>Sep. 2019 - Dec. 2019</p>
+                    </div>
+                    <div class="description">
+                        <strong>Tutor for computer literacy</strong>
+                        <p>Carrying out, in full autonomy, a tutoring course for computer literacy and in-depth study of online services</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Abilities -->
+            <section id="abilities">
+                <h1>Abilities</h1>
+                <p class="quote">"Life without knowledge is death in disguise." - Talib Kweli</p>
+                <hr>
+                <h3>Skills</h3>
+                <ul class="abil">
+                    <li>
+                        <span class="ability-title" id="java">Java</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="c">C</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="joomla">Joomla</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="software">Software Development</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="pm">Project Management</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="tm">Team Management</span>
+                    </li>
+                </ul>
+                <br><hr>
+                <h3>Languages</h3>
+                <ul class="abil">
+                    <li>
+                        <span class="ability-title" id="italian">Italian</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="english">English</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="french">French</span>
+                    </li>
+                </ul>
+                <br><hr>
+                <h3>Tools</h3>
+                <ul class="abil">
+                    <li>
+                        <span class="ability-title" id="visualStudio">Visual Studio</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="eclipse">Eclipse</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="office">MS Office</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="linux">Linux</span>
+                    </li>
+                    <li>
+                        <span class="ability-title" id="git">Git</span>
+                    </li>
+                </ul>
+            </section>
+            <input type="button" onclick="location.href='./projects.php';" value="See my projects" />
+        </div>
+        
+         <!-- Restricted Area -->
+        <div class="access-popup" id="accessForm">
+            <form action="./restricted.php" method="POST" class="form-container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    
+        <!-- Footer -->
+        <footer id="footer">
+            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
+        </footer>
+        
+        <!--JavaScript -->
+        <script src="./js/common.js"></script>
+        <script src="./js/curriculum.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            paintStars(java,4);
+            paintStars(c,4);
+            paintStars(joomla,5);
+            paintStars(software,4);
+            paintStars(pm,4);
+            paintStars(tm,5);
+            paintStars(italian,5);
+            paintStars(english,4);
+            paintStars(french,1);
+            paintStars(visualStudio,3);
+            paintStars(eclipse,4);         
+            paintStars(office,4);         
+            paintStars(linux,4);         
+            paintStars(git,4);
+        </script>
+    </body>
+</html>

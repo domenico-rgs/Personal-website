@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /media/*.mp3$
+Disallow: /restricted.html
 
 User-agent: Googlebot-Image
 Disallow: /media/profile.jpg

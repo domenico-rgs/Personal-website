@@ -1,19 +1,22 @@
 :root {
-    --strongRed: #ac3939;
-    --standardRed: #c66;
-    --lightRed: #d98c8c;
-    --black: #444;
+    --strongYellow: #fbc000;
+    --standardYellow: #ffc815;
+    --lightYellow: #ffd343;
+    --white: #fff;
 }
 
-::selection {background:var(--standardRed);} ::-moz-selection {background:var(--standardRed);}
+/* Highligh selected text with yellow */
+::selection {background:var(--standardYellow);} ::-moz-selection {background:var(--standardYellow);}
 
+/* GENERAL */
 body {
     margin: 10px 10%;
     padding: 0px; /* sort of initialization */
-    background-color: #F9F4ED;
-    color: var(--black);
+    background-color: #1d1d1d;
+    color: var(--white);
     font-family: bitter, Georgia, serif;
     line-height: 1.5;
+    word-wrap: break-word;
 }
 
 .it {
@@ -24,20 +27,25 @@ body {
     visibility: hidden;
 }
 
+/* LINK */
 a:link {
-    color: var(--standardRed);
+    color: var(--standardYellow);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--lightRed);
+    color: var(--lightYellow);
     text-decoration: none;
+}
+
+a.restricted{ 
+    color:#F9F4ED;
 }
 
 /* NAVBAR */
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 .topnav {
-    background-color: var(--standardRed);
+    background-color: var(--standardYellow);
     overflow: hidden;
     border-radius: 0.25em;
 }
@@ -54,11 +62,11 @@ a:visited {
 }
 
 .topnav a:hover {
-    background-color: var(--lightRed);
+    background-color: var(--lightYellow);
 }
 
 .topnav a.active {
-    background-color: var(--strongRed);
+    background-color: var(--strongYellow);
 }
 
 .topnav .icon {
@@ -70,16 +78,16 @@ a:visited {
 }
 
 /* HR LINE */
-hr.redline {
+hr.yellowLine {
     border: 0;
     height: 0.75em;
-    background: var(--standardRed);
+    background: var(--standardYellow);
     display: block;
     padding: 0;
     border-radius:0.25em;
 }
 
-/* H1 H2 */
+/* STANDARD H1 H2 H3 */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,400&display=swap');
 h1, h2 {
     font-family: 'Rubik', sans-serif;
@@ -108,7 +116,7 @@ h3 {
  #footer {
     display: block;
     height: 20px;
-    background-color: var(--standardRed);
+    background-color: var(--standardYellow);
     text-align: right;
     color: #F9F4ED;
     font-size: 75%;
@@ -117,6 +125,74 @@ h3 {
     border-radius: 0.75em;
     margin-top: 10px;
     clear: both; /* no floating left or right */
+}
+
+/* BUTTON */
+input[type="button"] {
+    background-color: var(--standardYellow);
+    color: white;
+    padding: 16px 55px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10% auto 1% auto;
+    transition: background 1s ease;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+      background-color: var(--strongYellow)
+}
+
+/*ACCESS FORM*/
+.access-popup {
+    display: none; /* popup hidden by default */
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #1d1d1d;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    text-align:center;
+    padding: 15px 0;
+    margin: 5px 0 10px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #ffc815;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 600px) {

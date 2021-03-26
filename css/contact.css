@@ -1,21 +1,11 @@
-:root {
-    --strongRed: #ac3939;
-    --standardRed: #c66;
-    --lightRed: #d98c8c;
-    --black: #444;
-}
-
+/* TAG TITLE */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     margin-top: 5%;
-}
-
-#contact {
-     margin: 5% 10%;
 }
 
 h3 {
@@ -23,11 +13,16 @@ h3 {
     font-weight: normal;
 }
 
-h3.redBold {
+h3.yellowBold {
     font-weight: bold;
-    color: var(--strongRed);
+    color: var(--strongYellow);
 }
 
+#contact {
+     margin: 5% 10%;
+}
+
+/* CONTACTS LIST */
 ul.contacts {
     list-style-type: none;
     padding-left: 0px;
@@ -46,7 +41,12 @@ ul.contacts li {
     margin: 30px 5%;
 }
 
-input[type=text], textarea {
+.number {
+    color: #ffc815;
+}
+
+/* FORM */
+input[type=text],input[type=email], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -58,18 +58,13 @@ input[type=text], textarea {
     font-family: Arial, sans-serif;
 }
 
-input[type=submit] {
-    background-color: var(--standardRed);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 1s ease;
+input[type=button]{
+    margin: 3% auto;
 }
 
-input[type=submit]:hover {
-      background-color: var(--strongRed)
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+        border: 1px solid #ffc815;
+
 }
 
 @media (max-width:767px){

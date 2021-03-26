@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact page">
+        <meta name="keywords" content="engineering, student, profile, contacts, email, telephone, form, telegram">
+        <meta name="author" content="Domenico Ragusa">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Domenico Ragusa - Engineering student</title>
+        <link rel="icon" href="./media/icon.png">
+        <link type="text/css" rel="stylesheet" href="./css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./css/contact.css" />
+        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="topnav" id="menu">
+            <a href="./index.html" >Home</a>
+            <a href="./profile.html">Profile</a>
+            <a href="./curriculum.html">Curriculum</a>
+            <a href="./projects.php">Projects</a>
+            <a href="#" class="active contact">Contact me</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="icon-th-menu"></i>
+            </a>
+        </nav>
+
+        <!-- Contact info -->
+        <section id="contact">
+			<h1>Tell me everything!</h1>
+			<h3>Do you need help with any projects? Do you have something interesting to show me? For anything you can contact me!</h3>
+            <hr class="yellowLine">
+            <h3 class="yellowBold">Contacts</h3>
+            <ul class="contacts">
+                <li><span class="icon-mail"></span><strong>Email</strong><br> <a href= "mailto:domenico.ragusa01@universitadipavia.it" class="mail">domenico.ragusa01@universitadipavia.it</a></li>
+                <li><span class="icon-phone"></span><strong>Telephone</strong><br><span class="number">+393275865029</span></li>
+                <li><span class="icon-send"></span><strong>Telegram</strong><br> <a href="https://t.me/domenico_rgs">@domenico_rgs</a></li>
+            </ul>
+            <hr class="yellowLine">
+        </section>
+
+        <!-- Contact form -->
+        <section id="container">
+                <h3 class="yellowBold">Form</h3>
+		      	<form name="contact_form" action="./php/sendmail.php" method="post">
+				    <label for="name">Name</label>
+				    <input type="text" id="name" name="name" maxlength="25" placeholder="Your name..."/>
+				    <label for="surname">Surname</label>
+				    <input type="text" id="surname" name="surname" maxlength="25" placeholder="Your surname..." />
+				    <label for="email">Email</label>
+				    <input type="email" id="email" name="email" maxlength="70" placeholder="Your email..." />
+				    <label for="message">Message</label>
+				    <textarea id="message" name="message" cols="50" rows="10" placeholder="Your message here"></textarea>
+				    <input type="button" value="Send" onclick="checkForm()"/>
+			     </form>
+        </section>
+        
+         <!-- Restricted Area -->
+        <div class="access-popup" id="accessForm">
+            <form action="./restricted.php" method="POST" class="form-container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
+        <!-- Footer -->    
+        <footer id="footer">
+             <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
+        </footer>
+        
+        <!-- JavaScript -->
+        <script src="./js/common.js"></script>
+        <script src="./js/contact.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    transform: translateX(calc((100% - 100vw) / 2));
+}
+
+.topnav {
+    opacity: 0;
+    transition: opacity 1s linear; 
+}
+
+/* FOOTER */
+#footer_home {
+    position: absolute;
+    height: 20px;
+    top:95%;
+    left: 55%;
+    text-align: right;
+    color: #F9F4ED;
+    font-size: 75%;
+}
+   
+/* BUTTON */
+#butVisible {
+    position: absolute;
+    bottom:5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width:767px){
+    #footer_home {left:80%;}
+}

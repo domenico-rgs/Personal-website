@@ -1,20 +1,47 @@
-:root {
-    --strongRed: #ac3939;
-    --standardRed: #c66;
-    --lightRed: #d98c8c;
-    --black: #444;
-}
-
+/* TAG TITLE */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Yellowtail&display=swap');
 h1 {
     text-align: center;
-    color: var(--strongRed);
+    color: var(--strongYellow);
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
+h3.projectTitle {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--standardYellow);
+}
+
 #projects {
     margin: 5% 10%;
+    overflow:auto;
+}
+
+/* PROJECTS TILES */ 
+.project {
+    float:left;
+    width: 280px;
+    height: 280px;
+    border: solid 1px var(--standardYellow);
+    background-color: #363636;
+    transition: background 1s ease;
+}
+
+.project:hover{
+    cursor: pointer;
+    background-color: #696969;
+}
+
+.desc{
+    height: 45%;
+}
+
+.project .lang, .project .desc {
+    word-wrap: break-word;
+    margin-left:8px;
+    margin-right:8px;
 }
 
 @media (max-width:767px){
@@ -22,4 +49,8 @@ h1 {
     #menu, #projects {width: 100%;}
     body {margin: 10px 35px; width: 80%;}
     #projects {margin: 5% 0%;}
+}
+
+@media (max-width:1300px){
+    .project{width:99%; height: 100%;}
 }
