@@ -6,7 +6,7 @@
         <meta name="keywords" content="engineering, student, profile, personal website, projects, works">
         <meta name="author" content="Domenico Ragusa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Domenico Ragusa - Engineering student</title>
+        <title>Domenico Ragusa - Engineering student - Projects</title>
         <link rel="icon" href="./media/icon.png">
         <link type="text/css" rel="stylesheet" href="./css/projects.css" />
         <link type="text/css" rel="stylesheet" href="./css/common.css" />

@@ -91,7 +91,7 @@ p {
 
 @media (max-width:767px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.3em solid var(--white); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.3em solid #434343; float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     h1 {font-size: 40px;}
     h2 {font-size: 30px;}
@@ -105,7 +105,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1300px){
     #menu, #photo_profile, #main_profile, #about, #footer {width:100%;}
-    img.ph_profile { width: 100%; height: auto; border: 0.6em solid var(--white); float: none;}
+    img.ph_profile { width: 100%; height: auto; border: 0.6em solid #434343; float: none;}
     #photo_profile, #main_profile {margin-left: 0px;}
     .half1{margin-right: 10px;}
 }
