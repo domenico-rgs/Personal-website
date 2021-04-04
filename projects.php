@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Domenico Ragusa's projects">
-        <meta name="keywords" content="engineering, student, profile, personal website, projects, works">
+        <meta name="description" content="Domenico Ragusa's projects made in work and alone for University or for curiosity. Hosted on GitHub">
+        <meta name="keywords" content="engineering, student, profile, personal website, projects, works, university, github">
         <meta name="author" content="Domenico Ragusa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Domenico Ragusa - Engineering student - Projects</title>
