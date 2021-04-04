@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php
+        /*
         $adminEmail='domenico.ragusa01@universitadipavia.it';
         $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); //check if email is correct if JS has been disabled
         $userMessage = "
@@ -43,10 +44,11 @@
     $mail_headers = "From: Domenico <domenico.ragusa01@universitadipavia.it>\r\n";
     $mail_headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
     $mail_headers .= "MIME-Version: 1.0\r\n";
-    $mail_headers .= "Content-type: text/html; charset=iso-8859-1";
+    $mail_headers .= "Content-type: text/html; charset=iso-8859-1"; 
+    */
 
     //Save message into DB
-    $con = mysqli_connect("localhost","root","Gh67hj46gd");
+    $con = mysqli_connect("sql100.epizy.com","epiz_28239783","2VpSrYnhM1R");
     if(!$con) {
         echo '<script>Swal.fire({
                         icon: \'error\',
@@ -57,7 +59,7 @@
             </script>';
         exit();
     }
-    mysqli_select_db($con,"website");
+    mysqli_select_db($con,"epiz_28239783_WBDB");
     $sql="INSERT INTO messages (personName, surname, email, message) VALUES ('$_POST[name]','$_POST[surname]','$_POST[email]','$_POST[message]')";
     if (!mysqli_query($con,$sql)){
         echo '<script>Swal.fire({
@@ -71,8 +73,10 @@
     }
     mysqli_close($con);
     
+    /*
     mail($userEmail,'Contact request made successfully', $userMessage, $mail_headers);
     mail($adminEmail,'Contact request from the site', $adminMessage, $mail_headers);
+    */
     echo '<script>
         Swal.fire({
             icon: \'success\',

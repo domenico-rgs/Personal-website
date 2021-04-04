@@ -13,7 +13,7 @@
     <body>
         <?php
             if (isset($_POST['psw'])) {
-                if ($_POST['psw'] == "domenico") { //checking if password entered is correct
+                if ($_POST['psw'] == "dcr") { //checking if password entered is correct
                     if (!session_id()) session_start();
                     $_SESSION['logon'] = true;
                 }
@@ -54,12 +54,12 @@
             <thead><tr><th>Name and Surname</th><th>Email</th><th>Message</th></tr></thead>
             <tbody>
                 <?php
-                $con = mysqli_connect("localhost","root","Gh67hj46gd");
+                $con = mysqli_connect("sql100.epizy.com","epiz_28239783","2VpSrYnhM1R");
                     if(!$con){
                         die('Could not connect: '.mysqli_error($con));
                     }
         
-                    mysqli_select_db($con,"myprojects");
+                    mysqli_select_db($con,"epiz_28239783_WBDB");
         
                     $result = mysqli_query($con,"SELECT * FROM messages");
             

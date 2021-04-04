@@ -33,7 +33,7 @@
             <hr>
             <?php
                 //Get projects info from DB
-                $con = mysqli_connect("localhost","root","Gh67hj46gd");
+                $con = mysqli_connect("sql100.epizy.com","epiz_28239783","2VpSrYnhM1R");
                 if(!$con){
                     echo '<script>Swal.fire({
                         icon: \'error\',
@@ -45,7 +45,7 @@
                     exit();
                 }
         
-                mysqli_select_db($con,"website");
+                mysqli_select_db($con,"epiz_28239783_WBDB");
         
                 $result = mysqli_query($con,"SELECT * FROM projects");
             

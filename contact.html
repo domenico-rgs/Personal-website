@@ -11,6 +11,7 @@
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
         <link type="text/css" rel="stylesheet" href="./css/contact.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
         <!-- Navbar -->
@@ -37,13 +38,16 @@
                 <li><span class="icon-phone"></span><strong>Telephone</strong><br><span class="number">+393275865029</span></li>
                 <li><span class="icon-send"></span><strong>Telegram</strong><br> <a href="https://t.me/domenico_rgs">@domenico_rgs</a></li>
             </ul>
-            <hr class="yellowLine">
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.413305893905!2d9.163548215759828!3d45.178729160466915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787263e8e82c2fb%3A0xe8a4eb56102bea80!2sViale%20Resistenza%2C%2015%2C%2027100%20Pavia%20PV!5e0!3m2!1sen!2sit!4v1617519108934!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
+		<hr class="yellowLine">
+		
 
         <!-- Contact form -->
         <section id="container">
                 <h3 class="yellowBold">Form</h3>
-		      	<form name="contact_form" action="./php/sendmail.php" method="post">
+		      	<form name="contact_form" action="./php/sendmail.php" method="POST">
 				    <label for="name">Name</label>
 				    <input type="text" id="name" name="name" maxlength="25" placeholder="Your name..."/>
 				    <label for="surname">Surname</label>
@@ -52,6 +56,7 @@
 				    <input type="email" id="email" name="email" maxlength="70" placeholder="Your email..." />
 				    <label for="message">Message</label>
 				    <textarea id="message" name="message" cols="50" rows="10" placeholder="Your message here"></textarea>
+					<!--<div class="g-recaptcha" data-sitekey="your_site_key"></div>-->
 				    <input type="button" value="Send" onclick="checkForm()"/>
 			     </form>
         </section>
