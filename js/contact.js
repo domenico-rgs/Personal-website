@@ -41,6 +41,12 @@ function checkForm() {
         message += "Email entered is not valid<br>";
     if (!exists(document.contact_form.message.value) ) 
         message += "Please add your message to me";
+	
+	 var hcaptchaVal = $('[name=h-captcha-response]').val();
+	if (hcaptchaVal === "") {
+      event.preventDefault();
+      message += "Please complete the hCaptcha";
+	}
 		
     if ( message != "" ) 
        Swal.fire({
