@@ -109,3 +109,7 @@ p {
     #photo_profile, #main_profile {margin-left: 0px;}
     .half1{margin-right: 10px;}
 }
+
+@media (min-width: 1301px){
+   #main_profile { padding-bottom: 15%;}
+}

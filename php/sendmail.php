@@ -9,21 +9,6 @@
 </head>
 <body>
     <?php
-	
-		$data = array(
-			'secret' => "0x99D7F1261300464F29B7312345c6510472F497bc",
-			'response' => $_POST['h-captcha-response']
-		);
-		
-		$verify = curl_init();
-		curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
-		curl_setopt($verify, CURLOPT_POST, true);
-		curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
-		curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
-		$response = curl_exec($verify);
-		$responseData = json_decode($response);
-		if($responseData->success) {
-
         /*
         $adminEmail='domenico.ragusa01@universitadipavia.it';
         $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); //check if email is correct if JS has been disabled
@@ -100,7 +85,6 @@
             history.go(-1);
         });
     </script>';
-		}
     ?>
 </body>
 </html>
