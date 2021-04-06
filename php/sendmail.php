@@ -2,13 +2,36 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" defer="defer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <style>
         background-color: #1d1d1d;
     </style>
 </head>
 <body>
     <?php
+	
+		if ( isset($_POST['submit']) ) {
+			$data = array(
+				'secret' => "0x99D7F1261300464F29B7312345c6510472F497bc",
+				'response' => $_POST['h-captcha-response']
+			);
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, "https://hcaptcha.com/siteverify");
+			curl_setopt($ch, CURLOPT_POST, true);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			$response = curl_exec($ch);
+			$responseData = json_decode($response);
+			if($responseData->success) {
+				echo '<script>Swal.fire({
+                        icon: \'error\',
+                        text: \'The request could not be completed, please retry\',
+                }).then(function() {
+					history.go(-1);
+                });
+            </script>';
+			}
+		}
         /*
         $adminEmail='domenico.ragusa01@universitadipavia.it';
         $userEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); //check if email is correct if JS has been disabled

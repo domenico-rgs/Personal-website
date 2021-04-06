@@ -41,7 +41,7 @@ function checkForm() {
         message += "Email entered is not valid<br>";
     if (!exists(document.contact_form.message.value) ) 
         message += "Please add your message to me";
-   			
+		
     if ( message != "" ) 
        Swal.fire({
             icon: 'error',
