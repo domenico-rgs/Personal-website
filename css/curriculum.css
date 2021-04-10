@@ -32,16 +32,19 @@ h3 {
 
 .description {
     display: block;
+	border-left: 1px solid var(--white);
+}
+
+.description p {
+	padding: 2%;
 }
 
 .location {
     display:block;
     float:left;
-    border-right: 1px solid var(--white);
     width: 20%;
-    height: 200px;
+    height: 100px;
     margin-right: 5%;
-    padding-right: 5%;
 }
 
 .location .place {
@@ -106,9 +109,10 @@ ul.abil li:hover {
     #menu, #experiences, #abilities {width: 100%;}
     body {margin: 10px auto; width: 80%;}
     h1 {font-size: 190%;}
-    .location {float:none; width: 100%; border-right: none; height:auto;}
+    .location {float:none; width: 100%; height:auto;}
     .description p {margin-top: 5%;}
-    .description {margin-top: 10%;}
+    .description {margin-top: 10%; border-left: none;}
+	.description strong { padding: 2%; display:block; }
     ul.abil {padding: 0;}
     input[type=button]{ margin: 10% auto;}
     ul.abil li {margin-bottom: 7%;}

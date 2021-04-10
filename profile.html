@@ -16,11 +16,11 @@
 
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./index.html" >Home</a>
+            <a href="./" >Home</a>
             <a href="#" class="active">Profile</a>
-            <a href="./curriculum.html">Curriculum</a>
-            <a href="./projects.php">Projects</a>
-            <a href="./contact.html" class="contact">Contact me</a>
+            <a href="./curriculum">Curriculum</a>
+            <a href="./projects">Projects</a>
+            <a href="./contacts" class="contact">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="icon-th-menu"></i>
@@ -29,9 +29,8 @@
 
 
         <!-- Photo -->
-        <figure id="photo_profile" onclick="playAudio()">
+        <figure id="photo_profile">
             <img class="ph_profile" src="./media/profile.webp" alt="Domenico Ragusa" width="500" height="500" />
-            <audio id="audio" src="./media/easteregg.mp3"></audio>
         </figure>
 		
         <!-- Intro -->
@@ -89,7 +88,7 @@
         
          <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
-            <form action="./restricted.php" method="POST" class="form-container">
+            <form action="./restricted" method="POST" class="form-container">
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 

@@ -4,27 +4,27 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"> <!--xmlns usato per i namespace, xsi:schemaLocation indica dove trovare lo schema xml (remoto) per la validazione del documento  -->
     <url>
-        <loc>http://localhost/project/index.html</loc>
+        <loc>https://domenico-ragusa.ml/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
      <url>
-        <loc>http://localhost/project/html/profile.html</loc>
+        <loc>https://domenico-ragusa.ml/html/profile</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
      <url>
-        <loc>http://localhost/project/html/html/curriculum.html</loc>
+        <loc>https://domenico-ragusa.ml/html/curriculum</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
      <url>
-        <loc>http://localhost/project/html/projects.html</loc>
+        <loc>https://domenico-ragusa.ml/html/projects</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>http://localhost/project/html/contact.html</loc>
+        <loc>https://domenico-ragusa.ml/html/contacts</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>

@@ -5,4 +5,4 @@ Disallow: /restricted.html
 User-agent: Googlebot-Image
 Disallow: /media/profile.jpg
 
-Sitemap: http://localhost/sitemap.xml
+Sitemap: https://domenico-ragusa.ml/sitemap.xml

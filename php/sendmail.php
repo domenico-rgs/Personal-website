@@ -48,25 +48,25 @@
     */
 
     //Save message into DB
-    $con = mysqli_connect("sql100.epizy.com","epiz_28239783","2VpSrYnhM1R");
+    $con = mysqli_connect("sql211.epizy.com","epiz_28323548","Jb0qqCRadcNhv");
     if(!$con) {
         echo '<script>Swal.fire({
                         icon: \'error\',
                         text: \'The request could not be completed, please retry\',
                 }).then(function() {
-                    window.location = "../contact.html";
+                    window.location = "../contacts.html";
                 });
             </script>';
         exit();
     }
-    mysqli_select_db($con,"epiz_28239783_WBDB");
+    mysqli_select_db($con,"epiz_28323548_WBDB");
     $sql="INSERT INTO messages (personName, surname, email, message) VALUES ('$_POST[name]','$_POST[surname]','$_POST[email]','$_POST[message]')";
     if (!mysqli_query($con,$sql)){
         echo '<script>Swal.fire({
                         icon: \'error\',
                         text: \'The request could not be completed, please retry\',
                 }).then(function() {
-                    window.location = "../contact.html";
+                    window.location = "../contacts.html";
                 });
             </script>';
         exit();

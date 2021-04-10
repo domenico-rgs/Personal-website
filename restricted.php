@@ -35,11 +35,11 @@
         ?>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./index.html">Home</a>
-            <a href="./profile.html">Profile</a>
-            <a href="./curriculum.html">Curriculum</a>
-            <a href="./projects.php">Projects</a>
-            <a href="./contact.html" class="contact">Contact me</a>
+            <a href="./">Home</a>
+            <a href="./profile">Profile</a>
+            <a href="./curriculum">Curriculum</a>
+            <a href="./projects">Projects</a>
+            <a href="./contacts" class="contact">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="icon-th-menu"></i>
@@ -54,12 +54,12 @@
             <thead><tr><th>Name and Surname</th><th>Email</th><th>Message</th></tr></thead>
             <tbody>
                 <?php
-                $con = mysqli_connect("sql100.epizy.com","epiz_28239783","2VpSrYnhM1R");
+                $con = mysqli_connect("sql211.epizy.com","epiz_28323548","Jb0qqCRadcNhv");
                     if(!$con){
                         die('Could not connect: '.mysqli_error($con));
                     }
         
-                    mysqli_select_db($con,"epiz_28239783_WBDB");
+                    mysqli_select_db($con,"epiz_28323548_WBDB");
         
                     $result = mysqli_query($con,"SELECT * FROM messages");
             
