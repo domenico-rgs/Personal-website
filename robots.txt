@@ -1,8 +1,6 @@
 User-agent: *
-Disallow: /media/*.mp3$
 Disallow: /restricted.html
-
-User-agent: Googlebot-Image
+Disallow: /errorPages/
 Disallow: /media/profile.jpg
 
 Sitemap: https://domenico-ragusa.ml/sitemap.xml
