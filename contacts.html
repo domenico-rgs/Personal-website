@@ -15,14 +15,14 @@
     <body>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./" >Home</a>
-            <a href="./profile">Profile</a>
-            <a href="./curriculum">Curriculum</a>
-            <a href="./projects">Projects</a>
-            <a href="#" class="active contact">Contact me</a>
+            <a href="./" accesskey="1">Home</a>
+            <a href="./profile" accesskey="2">Profile</a>
+            <a href="./curriculum" accesskey="3">Curriculum</a>
+            <a href="./projects" accesskey="4">Projects</a>
+            <a href="#" class="active contact" accesskey="5">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                <i class="icon-th-menu"></i>
+                <span class="icon-th-menu"></span>
             </a>
         </nav>
 
@@ -33,13 +33,13 @@
             <hr class="yellowLine">
             <h3 class="yellowBold">Contacts</h3>
             <ul class="contacts">
-                <li><span class="icon-mail"></span><strong>Email</strong><br> <a href= "mailto:domenico.ragusa01@universitadipavia.it" rel="nofollow" class="mail">domenico.ragusa01@universitadipavia.it</a></li>
+                <li><span class="icon-mail"></span><strong>Email</strong><br> <a href= "mailto:domenico.ragusa01@universitadipavia.it" accesskey="e" title="Email contact"rel="nofollow" class="mail">domenico.ragusa01@universitadipavia.it</a></li>
                 <li><span class="icon-phone"></span><strong>Telephone</strong><br><span class="number">+393275865029</span></li>
-                <li><span class="icon-send"></span><strong>Telegram</strong><br> <a href="https://t.me/domenico_rgs" rel="nofollow">@domenico_rgs</a></li>
+                <li><span class="icon-send"></span><strong>Telegram</strong><br> <a href="https://t.me/domenico_rgs" accesskey="t" title="Telegram contact" rel="nofollow">@domenico_rgs</a></li>
             </ul>
 			
 			<div class="map-responsive">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.413305893905!2d9.163548215759828!3d45.178729160466915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787263e8e82c2fb%3A0xe8a4eb56102bea80!2sViale%20Resistenza%2C%2015%2C%2027100%20Pavia%20PV!5e0!3m2!1sen!2sit!4v1617519108934!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.413305893905!2d9.163548215759828!3d45.178729160466915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4787263e8e82c2fb%3A0xe8a4eb56102bea80!2sViale%20Resistenza%2C%2015%2C%2027100%20Pavia%20PV!5e0!3m2!1sen!2sit!4v1617519108934!5m2!1sen!2sit" width="600" height="450" alt="Viale Resistenza 15, 27100, Pavia"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</section>
 		<hr class="yellowLine">
@@ -57,15 +57,15 @@
 				    <input type="email" id="email" name="email" maxlength="70" placeholder="Your email..." />
 				    <label for="message">Message</label>
 				    <textarea id="message" name="message" cols="50" rows="10" placeholder="Your message here"></textarea>
-				    <input type="button" value="Send" onclick="checkForm()"/>
+				    <input type="button" value="Send" onclick="checkForm()"accesskey="s" />
 			     </form>
         </section>
         
          <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><strong>Password</strong></label>
+            <input type="password" placeholder="Enter Password" id="psw" required>
 
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>

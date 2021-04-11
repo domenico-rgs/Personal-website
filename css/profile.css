@@ -47,7 +47,7 @@ img.ph_profile {
     margin: 30px 30px;
 }
 
-#about i{
+#about em{
     margin-right: 10px;
     font-size:32px;
     color: var(--standardYellow);

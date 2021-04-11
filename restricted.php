@@ -42,7 +42,7 @@
             <a href="./contacts" class="contact">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="icon-th-menu"></i>
+                <span class="icon-th-menu"></span>
             </a>
         </nav>
         

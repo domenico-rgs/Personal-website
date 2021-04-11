@@ -15,14 +15,14 @@
     <body>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./" >Home</a>
-            <a href="./profile">Profile</a>
-            <a href="#" class="active">Curriculum</a>
-            <a href="./projects">Projects</a>
-            <a href="./contacts" class="contact">Contact me</a>
+            <a href="./" accesskey="1">Home</a>
+            <a href="./profile" accesskey="2">Profile</a>
+            <a href="#" class="active" accesskey="3">Curriculum</a>
+            <a href="./projects" accesskey="4">Projects</a>
+            <a href="./contacts" class="contact" accesskey="5">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                <i class="icon-th-menu"></i>
+                <span class="icon-th-menu"></span>
             </a>
         </nav>
         
@@ -35,7 +35,7 @@
 				
 				<br><br><br>
 					<div class="video-container">
-						<iframe src="https://www.youtube-nocookie.com/embed/9HJh7vqIgfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe lang="en" alt="Domenico Ragusa's videocurriculum" src="https://www.youtube-nocookie.com/embed/9HJh7vqIgfA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				<br><br>
 			
@@ -43,7 +43,7 @@
                 <div class="element">
                     <div class="location">
                         <h4>Universit&agrave; di Pavia</h4>
-                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p class="place"><span class="icon-place"></span>Pavia (PV)</p>
                         <p>2021 - 2023</p>
                     </div>
                     <div class="description">
@@ -54,7 +54,7 @@
                 <div class="element">
                     <div class="location">
                         <h4>Universit&agrave; di Pavia</h4>
-                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p class="place"><span class="icon-place"></span>Pavia (PV)</p>
                         <p>2017 - 2021</p>
                     </div>
                     <div class="description">
@@ -66,7 +66,7 @@
                 <div class="element">
                     <div class="location">
                         <h4>I.I.S.S. F. Crispi</h4>
-                        <p class="place"><i class="icon-place"></i>Ribera (AG)</p>
+                        <p class="place"><span class="icon-place"></span>Ribera (AG)</p>
                         <p>2012 - 2017</p>
                         <p class="vote">Grade: 100L</p>
                     </div>
@@ -80,7 +80,7 @@
                 <div class="element">
                     <div class="location">
                         <h4>Comune di Pavia</h4>
-                        <p class="place"><i class="icon-place"></i>Pavia (PV)</p>
+                        <p class="place"><span class="icon-place"></span>Pavia (PV)</p>
                         <p>Sep. 2019 - Dec. 2019</p>
                     </div>
                     <div class="description">
@@ -164,16 +164,16 @@
                     </li>
                 </ul>
             </section>
-            <input type="button" onclick="location.href='./projects';" value="See my projects" />
-			<input type="button" onclick="location.href='./media/Ragusa_curriculum.pdf';" value="Download PDF curriculum" />
+            <input type="button" onclick="location.href='./projects';" value="See my projects" accesskey="p" />
+			<input type="button" onclick="location.href='./media/Ragusa_curriculum.pdf';" value="Download PDF curriculum" accesskey="c"/>
 
         </div>
         
          <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><strong>Password</strong></label>
+            <input type="password" placeholder="Enter Password" id="psw" required>
 
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>

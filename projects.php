@@ -15,14 +15,14 @@
     <body>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./" >Home</a>
-            <a href="./profile">Profile</a>
-            <a href="./curriculum">Curriculum</a>
-            <a href="#" class="active">Projects</a>
-            <a href="./contacts" class="contact">Contact me</a>
+            <a href="./" accesskey="1">Home</a>
+            <a href="./profile" accesskey="2">Profile</a>
+            <a href="./curriculum" accesskey="3">Curriculum</a>
+            <a href="#" class="active" accesskey="4">Projects</a>
+            <a href="./contacts" class="contact" accesskey="5">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                <i class="icon-th-menu"></i>
+                <span class="icon-th-menu"></span>
             </a>
         </nav>
         
@@ -54,7 +54,7 @@
                     echo "<div class=\"project\" onclick=\"window.open('".$row['link']."')\">";
                     echo "<h3 class=\"projectTitle\">".$row['title']."</h3>";
                     echo "<p class=\"desc\">".$row['descript']."</p>";
-                    echo "<p class=\"lang\"> <b>Language</b>: <i>".$row['lang']."</i></p>";
+                    echo "<p class=\"lang\"> <strong>Language</strong>: <em>".$row['lang']."</em></p>";
                     echo "</div>";
                 }
             mysqli_close($con);
@@ -64,8 +64,8 @@
          <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><strong>Password</strong></label>
+            <input type="password" placeholder="Enter Password" id="psw" required>
 
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>

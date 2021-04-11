@@ -21,3 +21,14 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
+
+# remove www and index.php
+<IfModule mod_rewrite.c>
+	
+	RewriteCond %{HTTP_HOST} ^www\.example\.com$ [NC]
+	RewriteRule (.*) https://domenico-ragusa.ml/$1 [R=301,L]
+	
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php\ HTTP/
+	RewriteRule ^(([^/]+/)*)index\.php$ https://domenico-ragusa.ml/$1 [R=301,L]
+	
+</IfModule>
