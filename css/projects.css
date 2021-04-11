@@ -7,6 +7,14 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+	font-size: 25px;
+	margin-top: 1em;
+	font-style: normal;
+}
+
 h3.projectTitle {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;

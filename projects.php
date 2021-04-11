@@ -8,8 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Domenico Ragusa - Engineering student - Projects</title>
         <link rel="icon" href="./media/icon.png">
-        <link type="text/css" rel="stylesheet" href="./css/projects.css" />
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
+		<link type="text/css" rel="stylesheet" href="./css/projects.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
     </head>
     <body>
@@ -29,7 +29,7 @@
         <!-- Projects -->
         <section id="projects">
             <h1>Projects</h1>
-            <h3>Here are the projects carried out, both university and those made in free time. In group and alone.</h3>
+            <h2>Here are the projects carried out, both university and those made in free time. In group and alone.</h2>
             <hr>
             <?php
                 //Get projects info from DB

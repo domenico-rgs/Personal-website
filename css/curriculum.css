@@ -7,10 +7,15 @@ h1 {
     font-weight: bold;
 }
 
-h3 {
-    font-family: 'Quicksand', sans-serif;
+h2 {
+	font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     color: var(--strongYellow);
+	margin-top: 1em;
+	font-style: normal;
+	font-size: 30px;
+	text-transform: none;
+	letter-spacing: 0;
 }
 
 iframe {
@@ -60,10 +65,11 @@ iframe {
     margin-top: 10px;
 }
 
-.location h4 {
+.location h3 {
     margin-top: 0px;
     margin-bottom:0px;
     font-weight: bold;
+	font-size: 1em;
 }
 
 .location p{
