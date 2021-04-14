@@ -8,6 +8,10 @@
         <link type="text/css" rel="stylesheet" href="./css/common.css" />
         <link type="text/css" rel="stylesheet" href="./css/icons.css" />
         <link type="text/css" rel="stylesheet" href="./css/restricted.css" />
+		
+		<!-- JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="./js/common.js"></script>
     </head>
     
     <body>
@@ -78,8 +82,5 @@
             &copy; <span class="it">Domenico Ragusa 2021</span>
         </footer>
         
-        <!-- JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <script src="./js/common.js"></script>
     </body>
 </html>

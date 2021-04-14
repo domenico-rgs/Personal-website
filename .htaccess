@@ -1,8 +1,8 @@
-ErrorDocument 400 http://https://domenico-ragusa.ga/errorPages/400.html
-ErrorDocument 401 http://https://domenico-ragusa.ga/errorPages/401.html
-ErrorDocument 403 http://https://domenico-ragusa.ga/errorPages/403.html
-ErrorDocument 404 http://https://domenico-ragusa.ga/errorPages/404.html
-ErrorDocument 503 http://https://domenico-ragusa.ga/errorPages/503.html
+ErrorDocument 400 http://domenico-ragusa.ml/errorPages/400.html
+ErrorDocument 401 http://domenico-ragusa.ml/errorPages/401.html
+ErrorDocument 403 http://domenico-ragusa.ml/errorPages/403.html
+ErrorDocument 404 http://domenico-ragusa.ml/errorPages/404.html
+ErrorDocument 503 http://domenico-ragusa.ml/errorPages/503.html
 #InfinityFree PHP config
 php_value display_errors Off
 php_value mbstring.http_input auto
@@ -12,6 +12,13 @@ php_value date.timezone Europe/Rome
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+# remove www
+<IfModule mod_rewrite.c>
+	
+	RewriteCond %{HTTP_HOST} ^www\.domenico-ragusa\.ml$ [NC]
+	RewriteRule (.*) https://domenico-ragusa.ml/$1 [R=301,L]
+	
+</IfModule>
 #Delete file extensions
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -21,14 +28,10 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
-
 # remove www and index.php
 <IfModule mod_rewrite.c>
-	
 	RewriteCond %{HTTP_HOST} ^www\.example\.com$ [NC]
 	RewriteRule (.*) https://domenico-ragusa.ml/$1 [R=301,L]
-	
 	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.php\ HTTP/
 	RewriteRule ^(([^/]+/)*)index\.php$ https://domenico-ragusa.ml/$1 [R=301,L]
-	
 </IfModule>

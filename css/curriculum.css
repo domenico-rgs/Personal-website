@@ -115,10 +115,10 @@ ul.abil li:hover {
 	height: 100%; 
 }
 
-@media (max-width:767px){
+@media (max-width:900px){
     #menu, #experiences, #abilities {width: 100%;}
     body {margin: 10px auto; width: 80%;}
-    h1 {font-size: 190%;}
+    h1 {font-size: 35px;}
     .location {float:none; width: 100%; height:auto;}
     .description p {margin-top: 5%;}
     .description {margin-top: 10%; border-left: none;}
@@ -131,8 +131,9 @@ ul.abil li:hover {
     #curriculum{margin: 5% auto}
 }
 
-@media (min-width: 768px){
+@media (min-width: 901px){
     .description { margin-left: 200px;}
+	.description strong { padding: 2%; display:block; }
 }
 
 @media (max-width:360px){

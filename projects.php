@@ -65,7 +65,7 @@
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
             <label for="psw"><strong>Password</strong></label>
-            <input type="password" placeholder="Enter Password" id="psw" required>
+            <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
 
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
