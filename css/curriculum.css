@@ -138,4 +138,5 @@ ul.abil li:hover {
 
 @media (max-width:360px){
     ul.abil {font-size: 12px;}
+	h1 {font-size: 30px;}
 }
