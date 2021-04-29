@@ -9,22 +9,22 @@
         <priority>0.8</priority>
     </url>
      <url>
-        <loc>https://domenico-ragusa.ml/html/profile</loc>
+        <loc>https://domenico-ragusa.ml/profile</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
      <url>
-        <loc>https://domenico-ragusa.ml/html/curriculum</loc>
+        <loc>https://domenico-ragusa.ml/curriculum</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
      <url>
-        <loc>https://domenico-ragusa.ml/html/projects</loc>
+        <loc>https://domenico-ragusa.ml/projects</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://domenico-ragusa.ml/html/contacts</loc>
+        <loc>https://domenico-ragusa.ml/contacts</loc>
         <changefreq>yearly</changefreq>
         <priority>0.4</priority>
     </url>

@@ -7,10 +7,10 @@
         <meta name="author" content="Domenico Ragusa">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Domenico Ragusa - Engineering student - Projects</title>
-        <link rel="icon" href="./media/icon.png">
-        <link type="text/css" rel="stylesheet" href="./css/common.css" />
-		<link type="text/css" rel="stylesheet" href="./css/projects.css" />
-        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
+        <link rel="icon" href="./assets/media/icon.png">
+        <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+		<link type="text/css" rel="stylesheet" href="./assets/css/projects.css" />
+        <link type="text/css" rel="stylesheet" href="./assets/css/icons.css" />
     </head>
     <body>
         <!-- Navbar -->
@@ -79,6 +79,6 @@
         
         <!-- JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <script src="./js/common.js"></script>
+        <script src="./assets/js/common.js"></script>
     </body>
 </html>

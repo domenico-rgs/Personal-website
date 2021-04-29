@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Domenico Ragusa - Engineering student - Restricted area</title>
-        <link rel="icon" href="./media/icon.png">
-        <link type="text/css" rel="stylesheet" href="./css/common.css" />
-        <link type="text/css" rel="stylesheet" href="./css/icons.css" />
-        <link type="text/css" rel="stylesheet" href="./css/restricted.css" />
+        <link rel="icon" href="./assets/media/icon.png">
+        <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="./assets/css/icons.css" />
+        <link type="text/css" rel="stylesheet" href="./assets/css/restricted.css" />
 		
 		<!-- JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <script src="./js/common.js"></script>
+        <script src="./assets/js/common.js"></script>
     </head>
     
     <body>
