@@ -51,7 +51,7 @@
             
             
                 while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                    echo "<div class=\"project\" onclick=\"window.open('".$row['link']."')\">";
+                    echo "<div class=\"project\" onclick=\"window.open('".$row['link']."')\" title=\"Go to ".$row['title'] ." GitHub page\">";
                     echo "<h3 class=\"projectTitle\">".$row['title']."</h3>";
                     echo "<p class=\"desc\">".$row['descript']."</p>";
                     echo "<p class=\"lang\"> <strong>Language</strong>: <em>".$row['lang']."</em></p>";
