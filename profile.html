@@ -11,16 +11,19 @@
         <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
 		<link type="text/css" rel="stylesheet" href="./assets/css/profile.css" />
         <link type="text/css" rel="stylesheet" href="./assets/css/icons.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     </head>
     <body>
 
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./" accesskey="1">Home</a>
-            <a href="#" class="active" accesskey="2">Profile</a>
-            <a href="./curriculum" accesskey="3">Curriculum</a>
-            <a href="./projects" accesskey="4">Projects</a>
-            <a href="./contacts" class="contact" accesskey="5">Contact me</a>
+            <a href="./" title="Home" accesskey="1">Home</a>
+            <a href="#" title="Profile" class="active" accesskey="2">Profile</a>
+            <a href="./curriculum" title="Curriculum" accesskey="3">Curriculum</a>
+            <a href="./projects" title="Projects" accesskey="4">Projects</a>
+			<a href="javascript:openForm()" title="Restricted area" style="float: right; padding: 13px 16px 9px 16px;"><span class="material-icons">perm_identity</span></a>
+            <a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <span class="icon-th-menu"></span>
@@ -89,7 +92,7 @@
          <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
-            <label for="psw"><strong>Password</strong></label>
+            <label for="psw"><strong>Restricted Area</strong></label>
             <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
@@ -98,7 +101,7 @@
         
         <!-- Footer -->
         <footer id="footer">
-            <span onclick="openForm()">&copy;</span> <span class="it">Domenico Ragusa 2021</span>
+			&copy;<span class="it">Domenico Ragusa 2021</span>
         </footer>
         
         <!-- JavaScript -->
