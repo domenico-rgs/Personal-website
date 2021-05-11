@@ -29,7 +29,7 @@
             <a href="./profile" title="Profile" accesskey="2">Profile</a>
             <a href="./curriculum" title="Curriculum" accesskey="3">Curriculum</a>
             <a href="./projects" title="Projects" accesskey="4">Projects</a>
-			<a href="javascript:openForm()" title="Restricted area" style="float: right; padding: 13px 16px 9px 16px;"><span class="material-icons">perm_identity</span></a>
+			<a href="javascript:openForm()" class="restr" title="Restricted area"><span class="material-icons">perm_identity</span></a>
             <a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
             
 			<a href="javascript:void(0);" class="icon" onclick="hamburger()">
@@ -47,7 +47,7 @@
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
             <label for="psw"><strong>Restricted Area</strong></label>
-            <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+            <input type="password" placeholder="Enter Password" id="psw" name="psw" required novalidate>
 
             <button type="submit" class="btn">Login</button>
             <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>

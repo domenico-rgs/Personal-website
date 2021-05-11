@@ -79,6 +79,11 @@ a.restricted{
     float:right;
 }
 
+.topnav .restr {
+	float: right; 
+	padding: 13px 16px 9px 16px;
+}
+
 /* HR LINE */
 hr.yellowLine {
     border: 0;
@@ -203,7 +208,7 @@ input[type="button"]:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative; z-index: 1;}
     .topnav.responsive a.icon {
         position: absolute;
         font-size: 16px;
