@@ -17,11 +17,11 @@
 	transform: translate(-50%, -50%);
 	text-align:center;
 	
-	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-		-moz-animation: fadein 6s; /* Firefox < 16 */
-			-ms-animation: fadein 6s; /* Internet Explorer */
-				-o-animation: fadein 6s; /* Opera < 12.1 */
-					animation: fadein 6s;
+	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+		-moz-animation: fadein 4s; /* Firefox < 16 */
+			-ms-animation: fadein 4s; /* Internet Explorer */
+				-o-animation: fadein 4s; /* Opera < 12.1 */
+					animation: fadein 4s;
 }
 
 /* Large rounded green border */
