@@ -32,8 +32,6 @@ h2 {
 
 /* PHOTO */
 img.ph_profile {
-    width: 50%;
-    height: 50%;
     border-radius: 0.50em;
 	border: 0.75em solid #434343;
     display: block;
@@ -122,5 +120,5 @@ p {
 }
 
 @media (min-width: 1367px){
-   #main_profile { padding-bottom: 15%;}
+   #main_profile { padding-bottom: 35px;}
 }
