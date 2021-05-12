@@ -39,13 +39,15 @@
         ?>
         <!-- Navbar -->
         <nav class="topnav" id="menu">
-            <a href="./">Home</a>
-            <a href="./profile">Profile</a>
-            <a href="./curriculum">Curriculum</a>
-            <a href="./projects">Projects</a>
-            <a href="./contacts" class="contact">Contact me</a>
+            <a href="./" title="Home" accesskey="1">Home</a>
+            <a href="./profile" title="Profile" accesskey="2">Profile</a>
+            <a href="./curriculum" title="Curriculum" accesskey="3">Curriculum</a>
+            <a href="./projects" title="Projects" accesskey="4">Projects</a>
+			<div class="rightelements">
+				<a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
+            </div>
             
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <span class="icon-th-menu"></span>
             </a>
         </nav>

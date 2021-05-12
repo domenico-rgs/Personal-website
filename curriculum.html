@@ -21,8 +21,10 @@
             <a href="./profile" title="Profile" accesskey="2">Profile</a>
             <a href="#" title="Curriculum" class="active" accesskey="3">Curriculum</a>
             <a href="./projects" title="Projects" accesskey="4">Projects</a>
-			<a href="javascript:openForm()" class="restr" title="Restricted area"><span class="material-icons">perm_identity</span></a>
-            <a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
+			<div class="rightelements">
+				<a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
+				<a href="javascript:openForm()" class="restr" title="Restricted area" accesskey="6"><span class="material-icons">perm_identity</span></a>
+            </div>
             
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <span class="icon-th-menu"></span>
@@ -171,7 +173,7 @@
                 </ul>
             </section>
             <input type="button" onclick="location.href='./projects';" value="See my projects" accesskey="p" title="Go to project page"/>
-			<input type="button" onclick="location.href='./assets/CV.pdf';" value="Download PDF curriculum" accesskey="c" title="Download the curriculum in pdf format"/>
+			<input type="button" onclick="window.open('./assets/CV.pdf','_blank');" value="Download PDF curriculum" accesskey="c" title="Download the curriculum in pdf format"/>
 
         </div>
         

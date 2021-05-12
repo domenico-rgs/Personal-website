@@ -75,12 +75,11 @@ a.restricted{
     display:none;
 }
 
-.topnav .contact {
+.topnav .rightelements {
     float:right;
 }
 
-.topnav .restr {
-	float: right; 
+.topnav .restr { 
 	padding: 13px 16px 9px 16px;
 }
 
@@ -197,18 +196,19 @@ input[type="button"]:hover {
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
+	.topnav .rightelements a:first-child {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
         font-size: 16px;
     }
-    .topnav .contact {
+    .topnav .rightelements {
         float:left;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative; z-index: 1;}
+    .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
         position: absolute;
         font-size: 16px;
@@ -220,7 +220,7 @@ input[type="button"]:hover {
         display: block;
         text-align: left;
     }
-    .topnav .contact {
-        float:left;
-    }
+	.topnav.responsive .rightelements a:first-child {display: block;}
+	.topnav.responsive .rightelements { width: 100%; }
+	
 }

@@ -21,9 +21,11 @@
             <a href="./profile" title="Profile" accesskey="2">Profile</a>
             <a href="./curriculum" title="Curriculum" accesskey="3">Curriculum</a>
             <a href="#" title="Projects" class="active" accesskey="4">Projects</a>
-			<a href="javascript:openForm()" class="restr" title="Restricted area"><span class="material-icons">perm_identity</span></a>
-            <a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
-            
+			<div class="rightelements">
+				<a href="./contacts" title="Contacts" class="contact" accesskey="5">Contact me</a>
+				<a href="javascript:openForm()" class="restr" title="Restricted area" accesskey="6"><span class="material-icons">perm_identity</span></a>
+            </div>
+			
             <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <span class="icon-th-menu"></span>
             </a>
