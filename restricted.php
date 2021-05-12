@@ -56,8 +56,8 @@
         <h1>Messages received</h1>
         <br>
         <div style="overflow-x:auto;">
-        <table>
-            <thead><tr><th>Name and Surname</th><th>Email</th><th>Message</th></tr></thead>
+        <table summary="Messages sent through contact form in Contact Me page">
+            <thead><tr><th id="name">Name and Surname</th><th id="email">Email</th><th id="mess">Message</th></tr></thead>
             <tbody>
                 <?php
                 $con = mysqli_connect("sql211.epizy.com","epiz_28323548","Jb0qqCRadcNhv");
@@ -71,7 +71,7 @@
             
             
                     while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                        echo "<tr><td>".$row['personName']." ".$row['surname']."</td><td>".$row['email']."</td><td>".$row['message']."</td></tr>";
+                        echo "<tr><td headers=\"name\">".$row['personName']." ".$row['surname']."</td><td headers=\"email\">".$row['email']."</td><td headers=\"mess\">".$row['message']."</td></tr>";
                     }
                 mysqli_close($con);
                 ?>
