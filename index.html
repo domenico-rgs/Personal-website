@@ -16,13 +16,6 @@
     </head>
     
     <body>
-        <!-- The video -->
-        <video autoplay loop muted playsinline poster="./assets/media/background.webp" id="backgroundVideo">
-			<source src="./assets/media/background.webm" type="video/webm">
-            <source src="./assets/media/background.mp4" type="video/mp4">
-			<source src="./assets/media/background.ogv" type="video/ogg">
-        </video>
-        
         <!-- Navbar -->
         <nav class="topnav" id="menu">
             <a href="#" title="Home" class="active" accesskey="1">Home</a>
@@ -39,12 +32,19 @@
             </a>
         </nav>
 		
+		<!-- The video -->
+        <video autoplay loop muted playsinline poster="./assets/media/background.webp" id="backgroundVideo">
+			<source src="./assets/media/background.webm" type="video/webm">
+            <source src="./assets/media/background.mp4" type="video/mp4">
+			<source src="./assets/media/background.ogv" type="video/ogg">
+        </video>
+		
 		<div class="centered_text">
 			<h1>Domenico Ragusa</h1>
 			<hr>
 			<h2>Engineering student</h2>
 		</div>
-                
+   
         <!-- Restricted Area -->
         <div class="access-popup" id="accessForm">
             <form action="./restricted" method="POST" class="form-container">
@@ -58,7 +58,7 @@
         
         <!-- Footer -->
         <footer id="footer_home">
-            &copy; <span class="it">Domenico Ragusa 2021</span>
+            &copy; &nbsp;<span class="it">Domenico Ragusa 2021</span>
         </footer>
         
         <!-- JavaScript -->

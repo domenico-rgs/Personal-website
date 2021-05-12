@@ -194,7 +194,7 @@ input[type="button"]:hover {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     .topnav a:not(:first-child) {display: none;}
 	.topnav .rightelements a:first-child {display: none;}
     .topnav a.icon {
@@ -207,7 +207,7 @@ input[type="button"]:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
         position: absolute;
