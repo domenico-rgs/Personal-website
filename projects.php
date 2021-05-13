@@ -35,7 +35,7 @@
         <section id="projects">
             <h1>Projects</h1>
             <h2>Here are the projects carried out, both university and those made in free time. In group and alone.</h2>
-            <hr>
+            <hr class="yellowLine"><br>
             <?php
                 //Get projects info from DB
                 $con = mysqli_connect("sql211.epizy.com","epiz_28323548","Jb0qqCRadcNhv");

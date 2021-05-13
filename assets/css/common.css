@@ -22,6 +22,10 @@ body {
     word-wrap: break-word;
 }
 
+hr {
+	background-color: white;
+}
+
 .it {
     font-style: italic;
 }
