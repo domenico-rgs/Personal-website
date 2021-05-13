@@ -66,7 +66,7 @@
                         icon: \'error\',
                         text: \'The request could not be completed, please retry\',
                 }).then(function() {
-                    window.location = "../contacts.html";
+                    window.location = "../../contacts.html";
                 });
             </script>';
         exit();
